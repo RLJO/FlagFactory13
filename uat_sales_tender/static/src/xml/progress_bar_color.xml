@@ -1,0 +1,14 @@
+<odoo>
+<data>
+
+    <template id="assets_backend" name="sales_tender assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+<!--            <link rel="stylesheet" type="text/scss" href="/uat_sales_tender/static/src/css/progress_bar_color.css"/>-->
+<!--            <script type="text/javascript" src="/uat_sales_tender/static/src/js/progress_bar_color.js"/>-->
+<!--            <script type="text/javascript" src="/uat_sales_tender/static/src/js/test2.js"/>-->
+        </xpath>
+    </template>
+
+</data>
+</odoo>
+
