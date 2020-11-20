@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+
+    <act_window id="generate_barcode_flag_act_window"
+        name="Create Quotation"
+        binding_model="generate.barcode.flag"
+        res_model="so.select.products.demo"
+        binding_views="list"
+        view_mode="form"
+        target="new"
+
+    />
+
+    <record id="so_demo_select_products_view_form" model="ir.ui.view">
+        <field name="name">so.demo.select.products.view.form</field>
+        <field name="model">so.select.products.demo</field>
+        <field name="arch" type="xml">
+            <form string="Select Multiple Products">
+                <group>
+                    <field name="partner_id" required="1"/>
+                </group>
+                <footer>
+                    <button class="btn-primary" name="create_product" type="object" string="Apply"/>
+                    Or
+                    <button string="Cancel" class="oe_link" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+
+        <record id="select_products_view_form" model="ir.ui.view">
+            <field name="name">select_products_view_form</field>
+            <field name="model">select.products.demo</field>
+            <field name="arch" type="xml">
+                <form string="Selected Products Form">
+                    <sheet>
+                        <group>
+                            <field name="created_product"/>
+                            <field name="current_user"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="select_products_view_tree" model="ir.ui.view">
+            <field name="name">select_products_view_tree</field>
+            <field name="model">select.products.demo</field>
+            <field name="arch" type="xml">
+                <tree string="SelectedProductsTree">
+                    <field name="created_product"/>
+                    <field name="current_user"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <record id="selected_product_flag_action" model="ir.actions.act_window">
+            <field name="name">Selected Products</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">select.products.demo</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="so_selected_product_flag_action" model="ir.actions.act_window">
+            <field name="name">Selected Products</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">so.select.products.demo</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="selected_products_flag_menu"
+          name="Selected Products"
+          action="selected_product_flag_action"
+          parent="flag_barcode.generate_flag_menu"
+          groups="flag_barcode.group_flag_barcode_manager1"
+          sequence="1"
+          />
+
+
+
+    </data>
+</odoo>
