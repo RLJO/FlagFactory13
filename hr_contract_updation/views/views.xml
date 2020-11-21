@@ -120,7 +120,7 @@
     <menuitem
             id="hr_contract_advantage_template_menu_action"
             action="hr_contract_advantage_template_action"
-             parent="menu_hr_payroll_root"
+             parent="hr_payroll.menu_hr_payroll_root"
            sequence="150"
            groups="hr_payroll.group_hr_payroll_user"/>
 
