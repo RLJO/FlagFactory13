@@ -1,7 +1,6 @@
 <odoo>
   <data>
-    <?xml version="1.0" encoding="utf-8"?>
-<odoo>
+ 
     <!-- Root Menus -->
 
 
@@ -124,6 +123,6 @@
              parent="menu_hr_payroll_root"
            sequence="150"
            groups="hr_payroll.group_hr_payroll_user"/>
-</odoo>
+ 
   </data>
 </odoo>
