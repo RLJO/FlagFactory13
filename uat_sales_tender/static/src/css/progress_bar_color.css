@@ -1,0 +1,10 @@
+.o_progressbar .o_progress .o_progressbar_complete.o_progress_gt_fty {
+  background-color: green;
+  height: 100%;
+}
+
+.o_progressbar .o_progress .o_progressbar_complete.o_progress_lt_fty {
+  background-color: red;
+  height: 100%;
+}
+
