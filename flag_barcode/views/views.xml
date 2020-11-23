@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="assets_backend" name="flag_barcode assets" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+		        <link rel="stylesheet" href="/flag_barcode/static/src/core.css"/>
+                <script type="text/javascript" src="/flag_barcode/static/src/js/tree_header_extend.js"></script>
+            </xpath>
+        </template>
+    </data>
+</odoo>
