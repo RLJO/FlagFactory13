@@ -18,36 +18,51 @@ class BankVendorGuarantees(models.Model):
                               ('paid','Paid'),
                               ('renew','Renew'),
                               ('end','End'),
-                              ('repaid','Repaid')], default='draft')
+                              ('refund','Refund')], default='draft')
 
+    guarantee_no = fields.Char(string="Guarantee Number")
     description = fields.Char(string="Description")
     vendor_id = fields.Many2one('res.partner', string="Vendor") #03 #domain for Vendors or verndors
 
 
-    issue_date = fields.Date(string="Issue Date", required=True)
+    issue_date = fields.Date(string="Issue Date", required=True, default=lambda self: datetime.now())
     end_date = fields.Date(string="End Date")
     renew_date = fields.Date(string="Renew Date")
 
     guarantee_period = fields.Char(string="Guarantees Period")
 
-    guarantee_type = fields.Selection([('basic_g','Basic Guarantee'),('final_g','Final Guarantee')],
+    guarantee_amount = fields.Float(string="Guarantee Amount") #04 #currency field
+    guarantee_type = fields.Selection([('basic_g','Basic Guarantee 1%'),('final_g','Final Guarantee 5%')],
                                          string="Guarantees Type")
 
-    guarantee_amount = fields.Float(string="Guarantee Amount") #04 #currency field
-
-    guarantee_rate = fields.Float(string="Guarantee Rate") #05 #percentage %
-
+    guarantee_rate = fields.Char(string="Guarantee Rate") #05 #percentage %
     guarantee_total_amount = fields.Float(string="Guarantee Total Amount") #06 #currency field
-    guarantee_expense = fields.Float(string="Guarantee Expense Amount") #07 #currency field
+    guarantee_expense = fields.Float(string="Guarantee Expense") #07 #currency field
 
     currency_id = fields.Many2one('res.currency')
-    vat = fields.Many2one('account.tax', string="VAT", domain = [('type_tax_use', '=', 'purchase')], required=True)
+    guarantee_total_other_c = fields.Float(string="Guarantee Total Amount (Other Currency)") #06 #other currency field
 
+    vat = fields.Many2one('account.tax', string="VAT", domain = [('type_tax_use', '=', 'purchase')], required=True)
 
     bank_name = fields.Many2one('account.journal', domain=[('type', '=', 'bank')], required=True) #domain journal type = bank
     guarantee_expense_account = fields.Many2one('account.account', required=True) #from chart of accounts
     guarantee_account = fields.Many2one('account.account', required=True) #from chart of accounts
     notes = fields.Text(string="Notes")
+
+    acc_move_id = fields.Many2one('account.move', string="Journal Entries", readonly=True)
+    acc_paid = fields.Many2many('account.move.line')
+    acc_renew = fields.Many2many('account.move.line','account_acc_renew','account_id','acc_renew_id', string='Renewed Account')
+
+
+    @api.onchange('guarantee_type','guarantee_amount')
+    def guarantee_rating(self):
+        if self.guarantee_type or self.guarantee_amount:
+            if self.guarantee_type == 'basic_g':
+                self.guarantee_rate = '1%'
+                self.guarantee_total_amount = self.guarantee_amount * .01
+            if self.guarantee_type == 'final_g':
+                self.guarantee_rate = '5%'
+                self.guarantee_total_amount = self.guarantee_amount * .05
 
 
     #Sending Email
@@ -56,6 +71,7 @@ class BankVendorGuarantees(models.Model):
         """Sending document expiry notification to employees."""
 
         now = datetime.now() + timedelta(days=1)
+        print(now)
         date_now = now.date()
         match = self.search([])
         recipient_partners=[]
@@ -84,7 +100,7 @@ class BankVendorGuarantees(models.Model):
         for i in match:
             if i.end_date:
                 exp_date = fields.Date.from_string(i.end_date)
-                if date_now == exp_date:
+                if date_now == exp_date and i.state == 'paid':
                     mail_content2 = "Hello  " + str(i.vendor_id.name) + ",<br>Your Bank Guarantees " \
                                    + str(i.name) + " is expired Today Please renew it. "
 
@@ -97,7 +113,7 @@ class BankVendorGuarantees(models.Model):
         for i in match:
             if i.renew_date:
                 exp_date2 = fields.Date.from_string(i.renew_date)
-                if date_now == exp_date2:
+                if date_now == exp_date2 and i.state == 'paid':
                     mail_content2 = "Hello  " + str(i.vendor_id.name) + ",<br>Your Bank Guarantees " \
                                    + str(i.name) + " is expired Today Please renew it. "
 
@@ -108,7 +124,6 @@ class BankVendorGuarantees(models.Model):
                                        partner_ids=recipient_partners,
                                        message_type='comment')
 
-    #######################
     #######################
     #######################
     #######################
@@ -125,7 +140,7 @@ class BankVendorGuarantees(models.Model):
             if i.end_date:
                 print('test1')
                 exp_date = fields.Date.from_string(i.end_date)
-                if date_now == exp_date:
+                if date_now == exp_date and i.state == 'paid':
                     print('test2')
                     act_type_xmlid = 'mail.mail_activity_data_todo'
                     print(act_type_xmlid)
@@ -157,7 +172,7 @@ class BankVendorGuarantees(models.Model):
             if i.renew_date:
                 print('test1')
                 exp_date = fields.Date.from_string(i.renew_date)
-                if date_now == exp_date:
+                if date_now == exp_date and i.state == 'paid':
                     print('test2')
                     act_type_xmlid = 'mail.mail_activity_data_todo'
                     print(act_type_xmlid)
@@ -186,34 +201,24 @@ class BankVendorGuarantees(models.Model):
                     self.env['mail.activity'].create(create_vals)
 
 
-#########################22
-#########################222
-#########################2222
-
-
-
 ###############################
 ###############################
 ###############################
-
-    @api.onchange('guarantee_amount','guarantee_rate')
-    def calc_currency(self):
-        self.guarantee_total_amount = self.guarantee_amount * self.guarantee_rate
 
 
     def button_confirm(self):
+        print(self.env.user.lang)
         return self.write({'state': 'approved'})
+
 
     def button_paid(self):
         account_id = self.env['account.move']
-        print('test44')
-        total_vat = self.vat.amount / 100 * round(float(self.guarantee_amount),2)
-        total_vat_vat = self.vat.amount / 100 * round(float(total_vat),2)
-        total_after = round(float(self.guarantee_amount),2) + round(float(total_vat),2) + round(float(total_vat_vat),2)
-        print(round(total_vat, 2))
-        print(round(total_vat_vat, 2))
-        print(total_after)
-        account_id.create({
+
+        total_vat = self.vat.amount / 100 * round(float(self.guarantee_expense),2)
+        total_after = round(float(self.guarantee_expense),2) + round(float(total_vat),2)
+
+        acc_move_ids = account_id.create({
+            'related_guarantee': self.id,
             'date': self.issue_date,
             'journal_id': self.bank_name.id,
             'ref': str('PAID '+self.name),
@@ -221,27 +226,34 @@ class BankVendorGuarantees(models.Model):
                 (0,0, {
                         'account_id': self.bank_name.default_credit_account_id.id,
                         'name': str(self.bank_name.name) + " [" + str(self.vendor_id.name) + "]",
+                        'credit': self.guarantee_total_amount
+                      }),
+                (0,0, {
+                        'account_id': self.bank_name.default_credit_account_id.id,
+                        'name': 'Letter of guarantee expense',
                         'credit': total_after
                       }),
                 (0,0, {
                         'account_id': self.vat.invoice_repartition_line_ids.account_id.id,
                         'name': "VAT " + str(self.vat.type_tax_use).capitalize() + " " + str(self.vat.name),
-                        'debit': total_vat_vat
+                        'debit': total_vat
                       }),
                 (0,0, {
                         'account_id': self.guarantee_expense_account.id,
                         'tax_ids': self.vat,
-                        'debit': total_vat
+                        'debit': self.guarantee_expense
                 }),
                 (0,0, {
                         'account_id': self.guarantee_account.id,
-                        'name': str(self.name) + " " + str(self.description),
-                        'debit': self.guarantee_amount
+                        'name': str(self.guarantee_no) + " " + str(self.description),
+                        'debit': self.guarantee_total_amount
                       }),
                     ]
             })
-
+        self.acc_move_id = acc_move_ids
+        self.acc_paid = acc_move_ids.line_ids
         return self.write({'state': 'paid'})
+
 
     def button_renew_end(self):
         return {
@@ -252,29 +264,30 @@ class BankVendorGuarantees(models.Model):
         }
 
 
-    def button_repaid(self):
+    def button_refund(self):
         account_id = self.env['account.move']
-        print('test55')
-        account_id.create({
+        acc_move_ids = account_id.create({
+            'related_guarantee': self.id,
             'date': self.issue_date,
             'journal_id': self.bank_name.id,
-            'ref': str('REPAID ' + self.name),
+            'ref': str('REFUND ' + self.name),
             'line_ids': [
                 (0, 0, {
                     'account_id': self.bank_name.default_credit_account_id.id,
                     'name': str(self.bank_name.name) + " [" + str(self.vendor_id.name) + "]",
-                    'credit': self.guarantee_amount
+                    'debit': self.guarantee_expense
                 }),
 
                 (0, 0, {
                     'account_id': self.guarantee_account.id,
                     'name': str(self.name) + " " + str(self.description),
-                    'debit': self.guarantee_amount
+                    'credit': self.guarantee_expense
                 }),
             ]
         })
+        self.acc_move_id = acc_move_ids
 
-        return self.write({'state': 'repaid'})
+        return self.write({'state': 'refund'})
 
     def button_set_draft(self):
         return self.write({'state': 'draft'})
@@ -299,26 +312,110 @@ class BankVendorGuarantees(models.Model):
             d1 = datetime.strptime(frst_date, fmt)
             d2 = datetime.strptime(scnd_date, fmt)
             total_period = (d2 - d1).days
-            if total_period > 1 or total_period == 0:
-                total_period = str(total_period) + str(" Days")
+
+            if self.env.user.lang == 'ar_001':
+                total_period = str(total_period) + str(" يوم")
                 self.guarantee_period = total_period
-            elif total_period == 1:
-                total_period = str(total_period) + str(" Day")
-                self.guarantee_period = total_period
+            else:
+                if total_period > 1 or total_period == 0:
+                    total_period = str(total_period) + str(" Days")
+                    self.guarantee_period = total_period
+                elif total_period == 1:
+                    total_period = str(total_period) + str(" Day")
+                    self.guarantee_period = total_period
 
 
 class BankVendorGuaranteesWizard(models.Model):
     _name = 'bank.vendor.guarantees.wizard'
 
+    renew = fields.Boolean('Renew ?')
+    new_end_date = fields.Date('Renew Date')
 
     def end_state(self):
         record_id = self.env['bank.vendor.guarantees'].search([('id', '=', self.env.context.get('active_id'))])
-        record_id.write({'state': 'end'})
-        if not record_id.end_date:
-            raise ValidationError(_("Please Enter 'End Date' Field"))
+
+        account_id = record_id.env['account.move']
+        acc_move_ids = account_id.create({
+            'related_guarantee': record_id.id,
+            'date': record_id.issue_date,
+            'journal_id': record_id.bank_name.id,
+            'ref': str('REFUND ' + record_id.name),
+            'line_ids': [
+                (0, 0, {
+                    'account_id': record_id.bank_name.default_credit_account_id.id,
+                    'name': str(record_id.bank_name.name) + " [" + str(record_id.vendor_id.name) + "]",
+                    'debit': record_id.guarantee_expense
+                }),
+
+                (0, 0, {
+                    'account_id': record_id.guarantee_account.id,
+                    'name': str(record_id.name) + " " + str(record_id.description),
+                    'credit': record_id.guarantee_expense
+                }),
+            ]
+        })
+        record_id.acc_move_id = acc_move_ids
+
+        record_id.write({'state': 'refund'})
+
 
     def renew_state(self):
         record_id = self.env['bank.vendor.guarantees'].search([('id', '=', self.env.context.get('active_id'))])
-        record_id.end_date = ''
-        record_id.guarantee_period = ''
+        record_id.end_date = self.new_end_date
 
+        if not self.new_end_date:
+            raise ValidationError(_("Please Enter New 'End Date' Field"))
+
+        fmt = '%Y-%m-%d'
+        frst_date = str(record_id.issue_date)
+        scnd_date = str(record_id.end_date)
+        d1 = datetime.strptime(frst_date, fmt)
+        d2 = datetime.strptime(scnd_date, fmt)
+        total_period = (d2 - d1).days
+
+        if self.env.user.lang == 'ar_001':
+            total_period = str(total_period) + str(" يوم")
+            record_id.guarantee_period = total_period
+        else:
+            if total_period > 1 or total_period == 0:
+                total_period = str(total_period) + str(" Days")
+                record_id.guarantee_period = total_period
+            elif total_period == 1:
+                total_period = str(total_period) + str(" Day")
+                record_id.guarantee_period = total_period
+
+        account_id = record_id.env['account.move']
+        total_vat = record_id.vat.amount / 100 * round(float(record_id.guarantee_expense), 2)
+        total_expense_after = round(float(total_vat), 2) + round(float(record_id.guarantee_expense), 2)
+
+        acc_move_ids = account_id.create({
+            'related_guarantee': record_id.id,
+            'date': record_id.issue_date,
+            'journal_id': record_id.bank_name.id,
+            'ref': str('PAID ' + record_id.name),
+            'line_ids': [
+                (0, 0, {
+                    'account_id': record_id.bank_name.default_credit_account_id.id,
+                    'name': str(record_id.bank_name.name) + " [" + str(record_id.vendor_id.name) + "]",
+                    'credit': total_expense_after,
+                }),
+                (0, 0, {
+                    'account_id': record_id.vat.invoice_repartition_line_ids.account_id.id,
+                    'name': "VAT " + str(record_id.vat.type_tax_use).capitalize() + " " + str(record_id.vat.name),
+                    'debit': total_vat
+                }),
+                (0, 0, {
+                    'account_id': record_id.guarantee_account.id,
+                    'name': str(record_id.guarantee_no) + " " + str(record_id.description),
+                    'debit': record_id.guarantee_expense
+                }),
+            ]
+        })
+        record_id.acc_move_id = acc_move_ids
+        record_id.acc_renew = acc_move_ids.line_ids
+        record_id.write({'state': 'end'})
+
+class AccMoveInheriting(models.Model):
+    _inherit = 'account.move'
+
+    related_guarantee = fields.Many2one('bank.vendor.guarantees', string="Related Guarantee", readonly=True)
