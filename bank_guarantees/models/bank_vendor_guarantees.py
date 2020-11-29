@@ -324,6 +324,37 @@ class BankVendorGuarantees(models.Model):
                     total_period = str(total_period) + str(" Day")
                     self.guarantee_period = total_period
 
+    def _bg_invoice_amount(self):
+        for each in self:
+            invoice_amount_ids = self.env['account.move'].sudo().search([('guarantee_letter', '=', each.id)])
+            if invoice_amount_ids:
+                for i in invoice_amount_ids:
+                    each.bg_invoice_amount += i.amount_total_signed
+            else:
+                each.bg_invoice_amount = 0
+
+
+    def bg_invoice_view(self):
+        self.ensure_one()
+        domain = [
+            ('guarantee_letter', '=', self.id)]
+        return {
+            'name': _('Documents'),
+            'domain': domain,
+            'res_model': 'account.move',
+            'type': 'ir.actions.act_window',
+            'view_id': False,
+            'view_mode': 'tree,form',
+            'view_type': 'form',
+            'help': _('''<p class="oe_view_nocontent_create">
+                           Click to Create for New Record
+                        </p>'''),
+            'limit': 80,
+            'context': "{'default_guarantee_letter': '%s'}" % self.id
+        }
+
+    bg_invoice_amount = fields.Integer(compute="_bg_invoice_amount")
+
 
 class BankVendorGuaranteesWizard(models.Model):
     _name = 'bank.vendor.guarantees.wizard'
@@ -415,7 +446,12 @@ class BankVendorGuaranteesWizard(models.Model):
         record_id.acc_renew = acc_move_ids.line_ids
         record_id.write({'state': 'end'})
 
+
+
 class AccMoveInheriting(models.Model):
     _inherit = 'account.move'
 
     related_guarantee = fields.Many2one('bank.vendor.guarantees', string="Related Guarantee", readonly=True)
+
+    is_guarantee_letter = fields.Boolean('Is Guarantee Letter')
+    guarantee_letter = fields.Many2one('bank.vendor.guarantees', domain = [('guarantee_type','=','final_g')])

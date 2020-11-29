@@ -29,6 +29,8 @@
         'views/bank_customer_guarantees.xml',
         'views/bank_vendor_guarantees.xml',
         'views/templates.xml',
+        'views/guarantee_vendor_report_report.xml',
+        'views/guarantee_vendor_report.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

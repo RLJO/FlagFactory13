@@ -2,6 +2,7 @@
   <data>
 
 
+
       <!-- Inherit Form View to Modify it -->
       <record id="account_move_inherit222" model="ir.ui.view">
           <field name="name">account.move.inherit222</field>
@@ -10,6 +11,8 @@
           <field name="arch" type="xml">
               <xpath expr="//field[@name='ref']" position="after">
                   <field name="related_guarantee"/>
+                  <field name="is_guarantee_letter"/>
+                  <field name="guarantee_letter" attrs="{'invisible': [('is_guarantee_letter','=',False)]}"/>
               </xpath>
 
           </field>
@@ -94,11 +97,19 @@
                     </header>
 
                   <sheet>
+                    <div class="oe_button_box">
+                        <button class="oe_stat_button" name="bg_invoice_view" type="object" icon="fa-money">
+                            <field string="Amount" name="bg_invoice_amount" widget="statinfo"/>
+
+                        </button>
+                    </div>
+
                     <h4>
                         <table>
                             <tr>
                                 <td style="padding-right:15px; padding-left:15px; ">
                                     <field name="name"/>
+
                                 </td>
                             </tr>
                         </table>

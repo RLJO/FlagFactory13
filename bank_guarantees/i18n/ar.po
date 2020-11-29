@@ -479,7 +479,7 @@ msgstr "خطأ في تسليم الرسائل القصيرة"
 #: model_terms:ir.ui.view,arch_db:bank_guarantees.bank_customer_guarantees_view_form
 #: model_terms:ir.ui.view,arch_db:bank_guarantees.bank_vendor_guarantees_view_form
 msgid "Set To Draft"
-msgstr "تعيين إلى مشروع"
+msgstr "تعيين إلى مسودة"
 
 #. module: bank_guarantees
 #: model:ir.model.fields,field_description:bank_guarantees.field_bank_customer_guarantees__state
