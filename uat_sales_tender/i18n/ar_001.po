@@ -1,0 +1,998 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* uat_sales_tender
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-11-29 14:25+0000\n"
+"PO-Revision-Date: 2020-11-29 14:25+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__document_count
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender_lines__document_count2
+msgid "# Documents"
+msgstr "مستندات#"
+
+#. module: uat_sales_tender
+#: code:addons/uat_sales_tender/models/sales_tender.py:0
+#: code:addons/uat_sales_tender/models/sales_tender.py:0
+#, python-format
+msgid ""
+"<p class=\"oe_view_nocontent_create\">\n"
+"                           Click to Create for New Documents\n"
+"                        </p>"
+msgstr ""
+"<p class=\"oe_view_nocontent_create\">\n"
+"                           انقر لإنشاء للمستندات الجديدة\n"
+"                        </p>"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_product_tender_document__message_needaction
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__message_needaction
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender__message_needaction
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender_document__message_needaction
+#: model:ir.model.fields,field_description:uat_sales_tender.field_tender_document__message_needaction
+msgid "Action Needed"
+msgstr "إجراء مطلوب"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_product_tender_document__activity_ids
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__activity_ids
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender__activity_ids
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender_document__activity_ids
+#: model:ir.model.fields,field_description:uat_sales_tender.field_tender_document__activity_ids
+msgid "Activities"
+msgstr "أنشطة"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_product_tender_document__activity_exception_decoration
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__activity_exception_decoration
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender__activity_exception_decoration
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender_document__activity_exception_decoration
+#: model:ir.model.fields,field_description:uat_sales_tender.field_tender_document__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_product_tender_document__activity_state
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__activity_state
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender__activity_state
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender_document__activity_state
+#: model:ir.model.fields,field_description:uat_sales_tender.field_tender_document__activity_state
+msgid "Activity State"
+msgstr "حالة النشاط"
+
+#. module: uat_sales_tender
+#: model_terms:ir.ui.view,arch_db:uat_sales_tender.tender_sales_form
+#: model_terms:ir.ui.view,arch_db:uat_sales_tender.tender_supplier_form
+msgid "Address"
+msgstr "العنوان"
+
+#. module: uat_sales_tender
+#: model_terms:ir.ui.view,arch_db:uat_sales_tender.tender_sales_form
+msgid "Approve"
+msgstr "يوافق"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields.selection,name:uat_sales_tender.selection__sales_tender__state__approve
+msgid "Approved"
+msgstr "وافق"
+
+#. module: uat_sales_tender
+#: model:ir.model,name:uat_sales_tender.model_ir_attachment
+#: model:ir.model.fields,field_description:uat_sales_tender.field_ir_attachment__doc_attach_rels
+#: model:ir.model.fields,field_description:uat_sales_tender.field_ir_attachment__doc_attach_rels_supp
+#: model:ir.model.fields,field_description:uat_sales_tender.field_ir_attachment__doc_attach_relss
+#: model:ir.model.fields,field_description:uat_sales_tender.field_mrp_document__doc_attach_rels
+#: model:ir.model.fields,field_description:uat_sales_tender.field_mrp_document__doc_attach_rels_supp
+#: model:ir.model.fields,field_description:uat_sales_tender.field_mrp_document__doc_attach_relss
+#: model:ir.model.fields,field_description:uat_sales_tender.field_product_tender_document__doc_attachment_idss
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender_document__doc_attachment_ids_supp
+#: model:ir.model.fields,field_description:uat_sales_tender.field_tender_document__doc_attachment_ids
+msgid "Attachment"
+msgstr "مرفق"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_product_tender_document__message_attachment_count
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__message_attachment_count
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender__message_attachment_count
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender_document__message_attachment_count
+#: model:ir.model.fields,field_description:uat_sales_tender.field_tender_document__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: uat_sales_tender
+#: model_terms:ir.ui.view,arch_db:uat_sales_tender.tender_sales_form
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields.selection,name:uat_sales_tender.selection__sales_tender__state__cancel
+msgid "Canceled"
+msgstr "ملغي"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__city
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender__city
+#: model_terms:ir.ui.view,arch_db:uat_sales_tender.tender_sales_form
+#: model_terms:ir.ui.view,arch_db:uat_sales_tender.tender_supplier_form
+msgid "City"
+msgstr "المدينة"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__company_id
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender__company_id
+#: model_terms:ir.ui.view,arch_db:uat_sales_tender.sales_tender_template
+msgid "Company"
+msgstr "الشركة"
+
+#. module: uat_sales_tender
+#: model_terms:ir.ui.view,arch_db:uat_sales_tender.tender_sales_form
+msgid "Completed"
+msgstr "تمت"
+
+#. module: uat_sales_tender
+#: model_terms:ir.ui.view,arch_db:uat_sales_tender.tender_sales_form
+msgid "Confirm"
+msgstr "تأكيد"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields.selection,name:uat_sales_tender.selection__sales_tender__state__confirm
+msgid "Confirmed"
+msgstr "مؤكد"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields.selection,name:uat_sales_tender.selection__supplier_tender_document__type__contract
+#: model:ir.model.fields.selection,name:uat_sales_tender.selection__tender_document__type__contract
+msgid "Contract"
+msgstr "العقد"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender_lines__standard_price
+msgid "Cost"
+msgstr "تكلفة"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__country
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender__country
+#: model_terms:ir.ui.view,arch_db:uat_sales_tender.tender_sales_form
+#: model_terms:ir.ui.view,arch_db:uat_sales_tender.tender_supplier_form
+msgid "Country"
+msgstr "الدولة"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_product_tender_document__create_uid
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__create_uid
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender_lines__create_uid
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender__create_uid
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender_document__create_uid
+#: model:ir.model.fields,field_description:uat_sales_tender.field_tender_document__create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_product_tender_document__create_date
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__create_date
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender_lines__create_date
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender__create_date
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender_document__create_date
+#: model:ir.model.fields,field_description:uat_sales_tender.field_tender_document__create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender__d_name
+msgid "D Name"
+msgstr "الإسم"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_product_tender_document__date
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender_document__date
+#: model:ir.model.fields,field_description:uat_sales_tender.field_tender_document__date
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__displayed_remained_days
+msgid "Days Left"
+msgstr "الأيام المتبقية"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__date_progress
+msgid "Days Left Percentage"
+msgstr "نسبة الأيام المتبقي"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__remained_days
+msgid "Days Remind"
+msgstr "أيام متبقية"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__deadline_date
+msgid "Deadline Date"
+msgstr "تاريخ الحد الأقصى"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__deadline_date_hijri
+msgid "Deadline Hijri Date"
+msgstr "تاريخ الحد الأقصى - هجري"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,help:uat_sales_tender.field_sales_tender_lines__product_uom_id
+msgid "Default unit of measure used for all stock operations."
+msgstr "وحده القياس الافتراضية المستخدمة لجميع عمليات المخزون."
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_product_tender_document__description
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender_lines__description
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender_document__description
+#: model:ir.model.fields,field_description:uat_sales_tender.field_tender_document__description
+#: model_terms:ir.ui.view,arch_db:uat_sales_tender.sales_tender_template
+#: model_terms:ir.ui.view,arch_db:uat_sales_tender.tender_document_form_view
+msgid "Description"
+msgstr "الوصف"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_product_tender_document__display_name
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__display_name
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender_lines__display_name
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender__display_name
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender_document__display_name
+#: model:ir.model.fields,field_description:uat_sales_tender.field_tender_document__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender_document__name
+#: model:ir.model.fields,field_description:uat_sales_tender.field_tender_document__name
+msgid "Document Reference"
+msgstr "الرقم المرجعي للمستند"
+
+#. module: uat_sales_tender
+#: code:addons/uat_sales_tender/models/sales_tender.py:0
+#: code:addons/uat_sales_tender/models/sales_tender.py:0
+#: model_terms:ir.ui.view,arch_db:uat_sales_tender.product_tender_document_form_view
+#: model_terms:ir.ui.view,arch_db:uat_sales_tender.sales_tender_document_inherit_form_view
+#: model_terms:ir.ui.view,arch_db:uat_sales_tender.tender_sales_form
+#, python-format
+msgid "Documents"
+msgstr "مستندات"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields.selection,name:uat_sales_tender.selection__sales_tender__state__draft
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender__email
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_product_tender_document__message_follower_ids
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__message_follower_ids
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender__message_follower_ids
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender_document__message_follower_ids
+#: model:ir.model.fields,field_description:uat_sales_tender.field_tender_document__message_follower_ids
+msgid "Followers"
+msgstr "المتابعون"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_product_tender_document__message_channel_ids
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__message_channel_ids
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender__message_channel_ids
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender_document__message_channel_ids
+#: model:ir.model.fields,field_description:uat_sales_tender.field_tender_document__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "المتابعون (القنوات)"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_product_tender_document__message_partner_ids
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__message_partner_ids
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender__message_partner_ids
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender_document__message_partner_ids
+#: model:ir.model.fields,field_description:uat_sales_tender.field_tender_document__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعون (الشركاء)"
+
+#. module: uat_sales_tender
+#: model_terms:ir.ui.view,arch_db:uat_sales_tender.view_product_tender_document_search
+msgid "Group By"
+msgstr "تجميع حسب"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_product_tender_document__id
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__id
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender_lines__id
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender__id
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender_document__id
+#: model:ir.model.fields,field_description:uat_sales_tender.field_tender_document__id
+msgid "ID"
+msgstr "المُعرف"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_product_tender_document__activity_exception_icon
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__activity_exception_icon
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender__activity_exception_icon
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender_document__activity_exception_icon
+#: model:ir.model.fields,field_description:uat_sales_tender.field_tender_document__activity_exception_icon
+msgid "Icon"
+msgstr "رمز"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,help:uat_sales_tender.field_product_tender_document__activity_exception_icon
+#: model:ir.model.fields,help:uat_sales_tender.field_sales_tender__activity_exception_icon
+#: model:ir.model.fields,help:uat_sales_tender.field_supplier_tender__activity_exception_icon
+#: model:ir.model.fields,help:uat_sales_tender.field_supplier_tender_document__activity_exception_icon
+#: model:ir.model.fields,help:uat_sales_tender.field_tender_document__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ".رمز للإشارة إلى نشاط استثناء"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,help:uat_sales_tender.field_product_tender_document__message_needaction
+#: model:ir.model.fields,help:uat_sales_tender.field_product_tender_document__message_unread
+#: model:ir.model.fields,help:uat_sales_tender.field_sales_tender__message_needaction
+#: model:ir.model.fields,help:uat_sales_tender.field_sales_tender__message_unread
+#: model:ir.model.fields,help:uat_sales_tender.field_supplier_tender__message_needaction
+#: model:ir.model.fields,help:uat_sales_tender.field_supplier_tender__message_unread
+#: model:ir.model.fields,help:uat_sales_tender.field_supplier_tender_document__message_needaction
+#: model:ir.model.fields,help:uat_sales_tender.field_supplier_tender_document__message_unread
+#: model:ir.model.fields,help:uat_sales_tender.field_tender_document__message_needaction
+#: model:ir.model.fields,help:uat_sales_tender.field_tender_document__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "إذا كان محددًا، فهناك رسائل جديدة تحتاج لرؤيتها."
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,help:uat_sales_tender.field_product_tender_document__message_has_error
+#: model:ir.model.fields,help:uat_sales_tender.field_product_tender_document__message_has_sms_error
+#: model:ir.model.fields,help:uat_sales_tender.field_sales_tender__message_has_error
+#: model:ir.model.fields,help:uat_sales_tender.field_sales_tender__message_has_sms_error
+#: model:ir.model.fields,help:uat_sales_tender.field_supplier_tender__message_has_error
+#: model:ir.model.fields,help:uat_sales_tender.field_supplier_tender__message_has_sms_error
+#: model:ir.model.fields,help:uat_sales_tender.field_supplier_tender_document__message_has_error
+#: model:ir.model.fields,help:uat_sales_tender.field_supplier_tender_document__message_has_sms_error
+#: model:ir.model.fields,help:uat_sales_tender.field_tender_document__message_has_error
+#: model:ir.model.fields,help:uat_sales_tender.field_tender_document__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا كان محددًا، فقد حدث خطأ في تسليم بعض الرسائل."
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender__image
+msgid "Image"
+msgstr "صورة"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_product_tender_document__message_is_follower
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__message_is_follower
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender__message_is_follower
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender_document__message_is_follower
+#: model:ir.model.fields,field_description:uat_sales_tender.field_tender_document__message_is_follower
+msgid "Is Follower"
+msgstr "متابع"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender_lines__product_id
+msgid "Items Requested"
+msgstr "العناصر المطلوبة"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_product_tender_document____last_update
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender____last_update
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender_lines____last_update
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender____last_update
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender_document____last_update
+#: model:ir.model.fields,field_description:uat_sales_tender.field_tender_document____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_product_tender_document__write_uid
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__write_uid
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender_lines__write_uid
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender__write_uid
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender_document__write_uid
+#: model:ir.model.fields,field_description:uat_sales_tender.field_tender_document__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_product_tender_document__write_date
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__write_date
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender_lines__write_date
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender__write_date
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender_document__write_date
+#: model:ir.model.fields,field_description:uat_sales_tender.field_tender_document__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_product_tender_document__message_main_attachment_id
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__message_main_attachment_id
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender__message_main_attachment_id
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender_document__message_main_attachment_id
+#: model:ir.model.fields,field_description:uat_sales_tender.field_tender_document__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "المرفق الرئيسي"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_product_tender_document__message_has_error
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__message_has_error
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender__message_has_error
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender_document__message_has_error
+#: model:ir.model.fields,field_description:uat_sales_tender.field_tender_document__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسائل"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_product_tender_document__message_ids
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__message_ids
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender__message_ids
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender_document__message_ids
+#: model:ir.model.fields,field_description:uat_sales_tender.field_tender_document__message_ids
+msgid "Messages"
+msgstr "الرسائل"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender__mobile
+msgid "Mobile"
+msgstr "الهاتف المحمول"
+
+#. module: uat_sales_tender
+#: code:addons/uat_sales_tender/models/sales_tender.py:0
+#: code:addons/uat_sales_tender/models/sales_tender.py:0
+#: code:addons/uat_sales_tender/models/sales_tender.py:0
+#: code:addons/uat_sales_tender/models/supplier_documents.py:0
+#: code:addons/uat_sales_tender/models/supplier_documents.py:0
+#: code:addons/uat_sales_tender/models/supplier_documents.py:0
+#: code:addons/uat_sales_tender/models/supplier_tender.py:0
+#: code:addons/uat_sales_tender/models/supplier_tender.py:0
+#: code:addons/uat_sales_tender/models/supplier_tender.py:0
+#: code:addons/uat_sales_tender/models/tender_documents.py:0
+#: code:addons/uat_sales_tender/models/tender_documents.py:0
+#: code:addons/uat_sales_tender/models/tender_documents.py:0
+#, python-format
+msgid "New"
+msgstr "جديد"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_product_tender_document__activity_date_deadline
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__activity_date_deadline
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender__activity_date_deadline
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender_document__activity_date_deadline
+#: model:ir.model.fields,field_description:uat_sales_tender.field_tender_document__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "الحد الأقصى للنشاط التالي"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_product_tender_document__activity_summary
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__activity_summary
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender__activity_summary
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender_document__activity_summary
+#: model:ir.model.fields,field_description:uat_sales_tender.field_tender_document__activity_summary
+msgid "Next Activity Summary"
+msgstr "ملخص النشاط التالي"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_product_tender_document__activity_type_id
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__activity_type_id
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender__activity_type_id
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender_document__activity_type_id
+#: model:ir.model.fields,field_description:uat_sales_tender.field_tender_document__activity_type_id
+msgid "Next Activity Type"
+msgstr "نوع النشاط التالي"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender_lines__note
+msgid "Note"
+msgstr "الملاحظات"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_product_tender_document__message_needaction_counter
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__message_needaction_counter
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender__message_needaction_counter
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender_document__message_needaction_counter
+#: model:ir.model.fields,field_description:uat_sales_tender.field_tender_document__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_product_tender_document__message_has_error_counter
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__message_has_error_counter
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender__message_has_error_counter
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender_document__message_has_error_counter
+#: model:ir.model.fields,field_description:uat_sales_tender.field_tender_document__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الأخطاء"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,help:uat_sales_tender.field_product_tender_document__message_needaction_counter
+#: model:ir.model.fields,help:uat_sales_tender.field_sales_tender__message_needaction_counter
+#: model:ir.model.fields,help:uat_sales_tender.field_supplier_tender__message_needaction_counter
+#: model:ir.model.fields,help:uat_sales_tender.field_supplier_tender_document__message_needaction_counter
+#: model:ir.model.fields,help:uat_sales_tender.field_tender_document__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "عدد الرسائل التي تتطلب إجراء"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,help:uat_sales_tender.field_product_tender_document__message_has_error_counter
+#: model:ir.model.fields,help:uat_sales_tender.field_sales_tender__message_has_error_counter
+#: model:ir.model.fields,help:uat_sales_tender.field_supplier_tender__message_has_error_counter
+#: model:ir.model.fields,help:uat_sales_tender.field_supplier_tender_document__message_has_error_counter
+#: model:ir.model.fields,help:uat_sales_tender.field_tender_document__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل الحادث بها خطأ في التسليم"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,help:uat_sales_tender.field_product_tender_document__message_unread_counter
+#: model:ir.model.fields,help:uat_sales_tender.field_sales_tender__message_unread_counter
+#: model:ir.model.fields,help:uat_sales_tender.field_supplier_tender__message_unread_counter
+#: model:ir.model.fields,help:uat_sales_tender.field_supplier_tender_document__message_unread_counter
+#: model:ir.model.fields,help:uat_sales_tender.field_tender_document__message_unread_counter
+msgid "Number of unread messages"
+msgstr "عدد الرسائل الجديدة"
+
+#. module: uat_sales_tender
+#. openerp-web
+#: code:addons/uat_sales_tender/static/src/js/test2.js:0
+#, python-format
+msgid "Only Integer or Float Value should be valid."
+msgstr "يجب أن تكون قيمة العدد(Integer/Float) صالحة"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__ordering_date
+#: model_terms:ir.ui.view,arch_db:uat_sales_tender.sales_tender_template
+msgid "Ordering Date"
+msgstr "تاريخ الطلب"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__ordering_date_hijri
+msgid "Ordering Hijri Date"
+msgstr "تاريخ الطلب - هجري"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields.selection,name:uat_sales_tender.selection__supplier_tender_document__type__other
+#: model:ir.model.fields.selection,name:uat_sales_tender.selection__tender_document__type__other
+msgid "Other"
+msgstr "غير ذلك"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__partner_id
+#: model_terms:ir.ui.view,arch_db:uat_sales_tender.sales_tender_template
+msgid "Partner"
+msgstr "الشريك"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__place_holder
+msgid "Place Holder"
+msgstr ""
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender_lines__price
+#: model_terms:ir.ui.view,arch_db:uat_sales_tender.sales_tender_template
+msgid "Price"
+msgstr "السعر"
+
+#. module: uat_sales_tender
+#: model_terms:ir.ui.view,arch_db:uat_sales_tender.tender_sales_form
+msgid "Print"
+msgstr "طباعة"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields.selection,name:uat_sales_tender.selection__sales_tender__state__print
+msgid "Printed"
+msgstr "مطبوع"
+
+#. module: uat_sales_tender
+#: model_terms:ir.ui.view,arch_db:uat_sales_tender.sales_tender_template
+msgid "Product"
+msgstr "المنتج"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_product_tender_document__product_ref
+msgid "Product Ref"
+msgstr "مرجع المنتج"
+
+#. module: uat_sales_tender
+#: model:ir.model,name:uat_sales_tender.model_product_tender_document
+msgid "Product Tender Documents"
+msgstr "مستندات المنتجات"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields.selection,name:uat_sales_tender.selection__sales_tender_lines__purch_or_prod__prod
+msgid "Production"
+msgstr "إنتاج"
+
+#. module: uat_sales_tender
+#. openerp-web
+#: code:addons/uat_sales_tender/static/src/js/test2.js:0
+#, python-format
+msgid "Progress Bar"
+msgstr "شريط التقدم"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender_lines__purch_or_prod
+msgid "Purch Or Prod"
+msgstr "شراء أو إنتاج "
+
+#. module: uat_sales_tender
+#: model:ir.model.fields.selection,name:uat_sales_tender.selection__sales_tender_lines__purch_or_prod__purch
+msgid "Purchase"
+msgstr "شراء"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender_lines__qty_delivered
+msgid "Qty Delivered"
+msgstr "الكمية المرسلة"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender_lines__quantity
+msgid "Quantity"
+msgstr "الكمية"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_product_tender_document__activity_user_id
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__activity_user_id
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender__activity_user_id
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender_document__activity_user_id
+#: model:ir.model.fields,field_description:uat_sales_tender.field_tender_document__activity_user_id
+msgid "Responsible User"
+msgstr "المستخدم المسؤول"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_product_tender_document__message_has_sms_error
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__message_has_sms_error
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender__message_has_sms_error
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender_document__message_has_sms_error
+#: model:ir.model.fields,field_description:uat_sales_tender.field_tender_document__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "خطأ في تسليم الرسائل القصيرة"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__created_so
+msgid "Sale Order"
+msgstr "أمر بيع"
+
+#. module: uat_sales_tender
+#: model:ir.model,name:uat_sales_tender.model_sale_order
+msgid "Sales Order"
+msgstr "أمر البيع"
+
+#. module: uat_sales_tender
+#: model:ir.module.category,name:uat_sales_tender.module_category_sales_tender
+msgid "Sales Tender"
+msgstr "مناقصة البيع"
+
+#. module: uat_sales_tender
+#: model:res.groups,name:uat_sales_tender.group_sales_tender_manager
+msgid "Sales Tender Manager"
+msgstr "مدير مناقصات البيع"
+
+#. module: uat_sales_tender
+#: model:res.groups,name:uat_sales_tender.group_sales_tender_production
+msgid "Sales Tender Production"
+msgstr "مناقصة البيع - الإنتاج"
+
+#. module: uat_sales_tender
+#: model:res.groups,name:uat_sales_tender.group_sales_tender_purchase
+msgid "Sales Tender Purchase"
+msgstr "مناقصة البيع - الشراء"
+
+#. module: uat_sales_tender
+#: model:res.groups,name:uat_sales_tender.group_sales_tender_user
+msgid "Sales Tender User"
+msgstr "مستخدم مناقصات البيع"
+
+#. module: uat_sales_tender
+#: model:ir.ui.menu,name:uat_sales_tender.sales_tender_root
+msgid "Sales Tenders"
+msgstr "مناقصات البيع"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields.selection,name:uat_sales_tender.selection__supplier_tender_document__type__sample
+#: model:ir.model.fields.selection,name:uat_sales_tender.selection__tender_document__type__sample
+msgid "Sample"
+msgstr "عينة"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender_lines__sequence
+msgid "Sequence"
+msgstr "المسلسل"
+
+#. module: uat_sales_tender
+#: model_terms:ir.ui.view,arch_db:uat_sales_tender.tender_sales_form
+msgid "Set to draft"
+msgstr "ردها إلى مسودة"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender_lines__so_line
+msgid "So Line"
+msgstr "عناصر أمر البيع"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__c_state
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender__c_state
+#: model_terms:ir.ui.view,arch_db:uat_sales_tender.tender_sales_form
+#: model_terms:ir.ui.view,arch_db:uat_sales_tender.tender_supplier_form
+msgid "State"
+msgstr "حالة"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__state
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__status_tender
+msgid "Status"
+msgstr "الحالة"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,help:uat_sales_tender.field_product_tender_document__activity_state
+#: model:ir.model.fields,help:uat_sales_tender.field_sales_tender__activity_state
+#: model:ir.model.fields,help:uat_sales_tender.field_supplier_tender__activity_state
+#: model:ir.model.fields,help:uat_sales_tender.field_supplier_tender_document__activity_state
+#: model:ir.model.fields,help:uat_sales_tender.field_tender_document__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__street
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender__street
+msgid "Street"
+msgstr "الشارع"
+
+#. module: uat_sales_tender
+#: model_terms:ir.ui.view,arch_db:uat_sales_tender.tender_sales_form
+#: model_terms:ir.ui.view,arch_db:uat_sales_tender.tender_supplier_form
+msgid "Street 2..."
+msgstr "الشارع 2..."
+
+#. module: uat_sales_tender
+#: model_terms:ir.ui.view,arch_db:uat_sales_tender.tender_sales_form
+#: model_terms:ir.ui.view,arch_db:uat_sales_tender.tender_supplier_form
+msgid "Street..."
+msgstr "الشارع..."
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__street2
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender__street2
+msgid "Street2"
+msgstr "الشارع 2"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_product_tender_document__supplier_id
+msgid "Supplier"
+msgstr "المورد"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_product_tender_document__supplier_doc_ids
+msgid "Supplier Doc"
+msgstr "مستندات المورد"
+
+#. module: uat_sales_tender
+#: model:ir.actions.act_window,name:uat_sales_tender.supplier_document_action
+msgid "Supplier Documents"
+msgstr "مستندات المورد"
+
+#. module: uat_sales_tender
+#: model_terms:ir.ui.view,arch_db:uat_sales_tender.tender_supplier_form
+msgid "Supplier Name"
+msgstr "اسم المورد"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender__supplier_prod_id
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender_document__supplier_prod_id
+msgid "Supplier Prod"
+msgstr "إنتاج المورد"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender__name
+msgid "Supplier Reference"
+msgstr "مرجع المورد"
+
+#. module: uat_sales_tender
+#: model:ir.ui.menu,name:uat_sales_tender.tender_supplier_menu
+#: model_terms:ir.ui.view,arch_db:uat_sales_tender.tender_sales_form
+#: model_terms:ir.ui.view,arch_db:uat_sales_tender.tender_supplier_tree
+#: model_terms:ir.ui.view,arch_db:uat_sales_tender.view_product_tender_document_search
+msgid "Suppliers"
+msgstr "الموردين"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sale_order__created_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__tender_ids
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender_lines__tender_id
+msgid "Tender"
+msgstr "مناقصة"
+
+#. module: uat_sales_tender
+#: model_terms:ir.ui.view,arch_db:uat_sales_tender.sales_tender_template
+msgid "Tender #"
+msgstr "مناقصة"
+
+#. module: uat_sales_tender
+#: model:ir.actions.report,name:uat_sales_tender.sales_tender_report_id
+msgid "Tender Contract"
+msgstr "عقد المناقصة"
+
+#. module: uat_sales_tender
+#: model:ir.model,name:uat_sales_tender.model_tender_document
+msgid "Tender Documents"
+msgstr "مستندات المناقصة"
+
+#. module: uat_sales_tender
+#: model_terms:ir.ui.view,arch_db:uat_sales_tender.tender_sales_form
+msgid "Tender Lines"
+msgstr "المناقصات"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__tender_no
+msgid "Tender Number"
+msgstr "رقم المناقصة"
+
+#. module: uat_sales_tender
+#: model:ir.actions.server,name:uat_sales_tender.ir_cron_tender_progress_bar_update_ir_actions_server
+#: model:ir.cron,cron_name:uat_sales_tender.ir_cron_tender_progress_bar_update
+#: model:ir.cron,name:uat_sales_tender.ir_cron_tender_progress_bar_update
+msgid "Tender Progressbar"
+msgstr "شريط التقدم للمناقصة"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_tender_document__tender_ref
+msgid "Tender Ref"
+msgstr "الرقم المرجعي للمناقصة"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__name
+msgid "Tender Reference"
+msgstr "الرقم المرجعي للمناقصة"
+
+#. module: uat_sales_tender
+#: model:ir.actions.act_window,name:uat_sales_tender.sales_tender_action
+msgid "Tender Sales"
+msgstr "مناقصات البيع"
+
+#. module: uat_sales_tender
+#: model:ir.model,name:uat_sales_tender.model_supplier_tender_document
+msgid "Tender Supplier Documents"
+msgstr "مستندات المورد"
+
+#. module: uat_sales_tender
+#: model:ir.actions.act_window,name:uat_sales_tender.supplier_tender_action
+msgid "Tender Suppliers"
+msgstr "مناقصات المورد"
+
+#. module: uat_sales_tender
+#: model:ir.ui.menu,name:uat_sales_tender.sales_tender_child
+#: model:ir.ui.menu,name:uat_sales_tender.tender_sales_menu
+#: model_terms:ir.ui.view,arch_db:uat_sales_tender.tender_sales_tree
+msgid "Tenders"
+msgstr "مناقصات البيع"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender_lines__total
+#: model_terms:ir.ui.view,arch_db:uat_sales_tender.sales_tender_template
+msgid "Total"
+msgstr "الإجمالي"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender_document__type
+#: model:ir.model.fields,field_description:uat_sales_tender.field_tender_document__type
+msgid "Type"
+msgstr "النوع"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,help:uat_sales_tender.field_product_tender_document__activity_exception_decoration
+#: model:ir.model.fields,help:uat_sales_tender.field_sales_tender__activity_exception_decoration
+#: model:ir.model.fields,help:uat_sales_tender.field_supplier_tender__activity_exception_decoration
+#: model:ir.model.fields,help:uat_sales_tender.field_supplier_tender_document__activity_exception_decoration
+#: model:ir.model.fields,help:uat_sales_tender.field_tender_document__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "نوع نشاط الاستثناء المسجل."
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender_lines__product_uom_id
+msgid "Unit of Measure"
+msgstr "وحدة القياس"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_product_tender_document__message_unread
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__message_unread
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender__message_unread
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender_document__message_unread
+#: model:ir.model.fields,field_description:uat_sales_tender.field_tender_document__message_unread
+msgid "Unread Messages"
+msgstr "الرسائل الجديدة"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_product_tender_document__message_unread_counter
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__message_unread_counter
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender__message_unread_counter
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender_document__message_unread_counter
+#: model:ir.model.fields,field_description:uat_sales_tender.field_tender_document__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "عدد الرسائل الجديدة"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__website
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender__website
+msgid "Website"
+msgstr "الموقع الإلكتروني"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_product_tender_document__website_message_ids
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__website_message_ids
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender__website_message_ids
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender_document__website_message_ids
+#: model:ir.model.fields,field_description:uat_sales_tender.field_tender_document__website_message_ids
+msgid "Website Messages"
+msgstr "رسائل الموقع"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,help:uat_sales_tender.field_product_tender_document__website_message_ids
+#: model:ir.model.fields,help:uat_sales_tender.field_sales_tender__website_message_ids
+#: model:ir.model.fields,help:uat_sales_tender.field_supplier_tender__website_message_ids
+#: model:ir.model.fields,help:uat_sales_tender.field_supplier_tender_document__website_message_ids
+#: model:ir.model.fields,help:uat_sales_tender.field_tender_document__website_message_ids
+msgid "Website communication history"
+msgstr "سجل تواصل الموقع"
+
+#. module: uat_sales_tender
+#. openerp-web
+#: code:addons/uat_sales_tender/static/src/js/test2.js:0
+#, python-format
+msgid "Wrong value entered!"
+msgstr "أدخلت قيمة خاطئة!"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,help:uat_sales_tender.field_product_tender_document__doc_attachment_idss
+#: model:ir.model.fields,help:uat_sales_tender.field_supplier_tender_document__doc_attachment_ids_supp
+#: model:ir.model.fields,help:uat_sales_tender.field_tender_document__doc_attachment_ids
+msgid "You can attach the copy of your document"
+msgstr "يمكنك إرفاق نسخة من المستند"
+
+#. module: uat_sales_tender
+#: model_terms:ir.ui.view,arch_db:uat_sales_tender.tender_sales_form
+#: model_terms:ir.ui.view,arch_db:uat_sales_tender.tender_supplier_form
+msgid "ZIP"
+msgstr "الرمز البريدي"
+
+#. module: uat_sales_tender
+#: model:ir.model.fields,field_description:uat_sales_tender.field_sales_tender__zip
+#: model:ir.model.fields,field_description:uat_sales_tender.field_supplier_tender__zip
+msgid "Zip"
+msgstr "الرمز البريدي"
+
+#. module: uat_sales_tender
+#: model_terms:ir.ui.view,arch_db:uat_sales_tender.tender_sales_form
+#: model_terms:ir.ui.view,arch_db:uat_sales_tender.tender_supplier_form
+msgid "e.g. www.odoo.com"
+msgstr ""
+
+#. module: uat_sales_tender
+#: model_terms:ir.ui.view,arch_db:uat_sales_tender.sales_tender_template
+msgid "quantity"
+msgstr "الكمية"
+
+#. module: uat_sales_tender
+#: model:ir.model,name:uat_sales_tender.model_sales_tender
+msgid "sales.tender"
+msgstr ""
+
+#. module: uat_sales_tender
+#: model:ir.model,name:uat_sales_tender.model_sales_tender_lines
+msgid "sales.tender.lines"
+msgstr ""
+
+#. module: uat_sales_tender
+#: model:ir.model,name:uat_sales_tender.model_supplier_tender
+msgid "supplier.tender"
+msgstr ""

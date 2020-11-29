@@ -49,7 +49,7 @@ class SalesTender(models.Model):
     company_id = fields.Many2one('res.company', string='Company', required=True, default=lambda self: self.env.company)
     partner_id = fields.Many2one('res.partner', string="Partner", domain="['|', ('company_id', '=', False), ('company_id', '=', company_id)]")
 
-    ordering_date = fields.Date(string="Ordering Date", tracking=True)
+    ordering_date = fields.Date(string="Ordering Date", tracking=True, required=True)
     ordering_date_hijri = fields.Char(string="Ordering Hijri Date", compute="_calculate_hajri")
     deadline_date = fields.Date(string='Deadline Date', tracking=True, required=True)
     deadline_date_hijri = fields.Char(string='Deadline Hijri Date', compute="_calculate_hajri")
@@ -90,11 +90,11 @@ class SalesTender(models.Model):
 
 
 
-    @api.depends('remained_days','deadline_date')
+    @api.depends('deadline_date', 'ordering_date')
     def date_progress1(self):
         print("TEST")
         fmt = '%Y-%m-%d'
-        if self.deadline_date:
+        if self.deadline_date and self.ordering_date:
             frstdate = str(date.today())
             scnddate = str(self.deadline_date)
             d1 = datetime.strptime(frstdate, fmt)
@@ -120,13 +120,13 @@ class SalesTender(models.Model):
 
         x = self.remained_days
 
-        if self.deadline_date:
+        if self.deadline_date and self.ordering_date:
             if x <= -1: #To dont let the percentage increase than 100% if date expired
                 calc = 1
-            self.date_progress = (calc * 100) / 1
+                self.date_progress = (calc * 100) / 1
             print(self.date_progress)
 
-        if self.deadline_date:
+        if self.deadline_date and self.ordering_date:
             if x > 1:
                 self.displayed_remained_days = str(x) + str(" Days")
             elif x == 1:
