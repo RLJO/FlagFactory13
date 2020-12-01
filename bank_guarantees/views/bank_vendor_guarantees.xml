@@ -10,8 +10,8 @@
           <field name="inherit_id" ref="account.view_move_form"/>
           <field name="arch" type="xml">
               <xpath expr="//field[@name='ref']" position="after">
-                  <field name="related_guarantee"/>
-                  <field name="is_guarantee_letter"/>
+                  <field name="related_guarantee" attrs="{'invisible': [('type', 'in', ('out_invoice', 'out_refund', 'in_invoice', 'in_refund'))]}"/>
+                  <field name="is_guarantee_letter" attrs="{'invisible': [('type', 'not in', 'in_invoice')]}"/>
                   <field name="guarantee_letter" attrs="{'invisible': [('is_guarantee_letter','=',False)]}"/>
               </xpath>
 
@@ -157,6 +157,9 @@
                     <page string="Renewed Journal Entries">
                         <field name="acc_renew"></field>
                     </page>
+                    <page string="Refunded Journal Entries">
+                        <field name="acc_refund"></field>
+                    </page>
                   </notebook>
                   </sheet>
 
@@ -165,8 +168,6 @@
                       <field name="activity_ids" widget="mail_activity"/>
                       <field name="message_ids" widget="mail_thread"/>
                   </div>
-
-
 
               </form>
           </field>
@@ -215,6 +216,7 @@
       <menuitem id="menu_bank_vendor_guarantees" name="Bank Guarantees"
                 parent="account.menu_finance_payables"
                 action="bank_vendor_guarantees_action"
+                groups="account.group_account_manager"
                 sequence="321"/>
 
   </data>

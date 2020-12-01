@@ -1,6 +1,6 @@
 <odoo>
-    <record model="report.paperformat" id="paperformat_guarantee_vendor_report_report">
-        <field name="name">paperformat.guarantee.vendor.report.report</field>
+    <record model="report.paperformat" id="paperformat_guarantee_customer_report_report">
+        <field name="name">paperformat.guarantee.customer.report.report</field>
         <field name="default" eval="True"/>
         <field name="format">A4</field>
         <field name="page_width">0</field>
@@ -15,15 +15,15 @@
         <field name="dpi">90</field>
     </record>
 
-    <report id="guarantee_vendor_report_report"
-            model="guarantee.vendor.report.wizard"
-            string="Guarantee Vendor Report"
+    <report id="guarantee_customer_report_report"
+            model="guarantee.customer.report.wizard"
+            string="Guarantee Customer Report"
             report_type="qweb-pdf"
-            name="bank_guarantees.guarantee_vendor_report_report_view"
-            paperformat="paperformat_guarantee_vendor_report_report"
+            name="bank_guarantees.guarantee_customer_report_report_view"
+            paperformat="paperformat_guarantee_customer_report_report"
             menu="False"/>
 
-    <template id="guarantee_vendor_report_report_view">
+    <template id="guarantee_customer_report_report_view">
         <t t-call="web.html_container">
             <t t-call="web.internal_layout">
 
@@ -34,7 +34,7 @@
                 </div>
                 <br/>
                 <div>
-                    <h3 class="text-center">Guarantee Vendor Report</h3>
+                    <h3 class="text-center">Guarantee Customer Report</h3>
                     <h4 class="text-center" t-if="date_start">
                         <strong>From</strong>:
                         <t t-esc="date_start"/>
@@ -52,7 +52,7 @@
                                     <tr class="thead-light" style="padding:0px; margin:0px;border-top: 2px solid #ddd;background-color: #f2f2f2;">
                                         <th class="text-center" style="padding: 8px;border: 2px solid #ddd;text-align: center;width: 20%">Description</th>
                                         <th class="text-center" style="padding: 8px;border: 2px solid #ddd;text-align: center;width: 30%">Bank Name</th>
-                                        <th class="text-center" style="padding: 8px;border: 2px solid #ddd;text-align: center;width: 20%">Vendor</th>
+                                        <th class="text-center" style="padding: 8px;border: 2px solid #ddd;text-align: center;width: 20%">Customer</th>
                                         <th class="text-center" style="padding: 8px;border: 2px solid #ddd;text-align: center;width: 11%">Type</th>
                                         <th class="text-center" style="padding: 8px;border: 2px solid #ddd;text-align: center;width: 9%">State</th>
                                         <th class="text-center" style="padding: 8px;border: 2px solid #ddd;text-align: center;width: 10%">Amount</th>
@@ -66,7 +66,7 @@
                                            <span t-esc="doc['bank_name']"/>
                                        </td>
                                       <td style="padding: 8px;border: 2px solid #ddd;text-align: center; width:16%">
-                                           <span t-esc="doc['vendor_id']"/>
+                                           <span t-esc="doc['customer_id']"/>
                                        </td>
                                         <td style="padding: 8px;border: 2px solid #ddd;text-align: center;width:16%">
                                            <span t-esc="doc['guarantee_type']"/>

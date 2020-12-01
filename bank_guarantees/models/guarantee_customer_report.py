@@ -1,8 +1,8 @@
 from odoo import models, fields, api
 
 
-class GuaranteeVendorReportWizard(models.TransientModel):
-    _name = 'guarantee.vendor.report.wizard'
+class GuaranteeCustomerReportWizard(models.TransientModel):
+    _name = 'guarantee.customer.report.wizard'
 
 
     start_date = fields.Date(string="Start Date")
@@ -18,7 +18,7 @@ class GuaranteeVendorReportWizard(models.TransientModel):
                               ('refund','Refund')])
 
 
-    def get_guarantee_vendor_report(self):
+    def get_guarantee_customer_report(self):
         data = {
             'ids': self.ids,
             'model': self._name,
@@ -30,12 +30,12 @@ class GuaranteeVendorReportWizard(models.TransientModel):
                 'guarantee_type': self.guarantee_type,
             },
         }
-        return self.env.ref('bank_guarantees.guarantee_vendor_report_report').report_action(self, data=data)
+        return self.env.ref('bank_guarantees.guarantee_customer_report_report').report_action(self, data=data)
 
 
-class GuaranteeVendorReportReportView(models.AbstractModel):
-    _name = "report.bank_guarantees.guarantee_vendor_report_report_view"
-    _description = "Guarantee Vendor Report"
+class GuaranteeCustomerReportReportView(models.AbstractModel):
+    _name = "report.bank_guarantees.guarantee_customer_report_report_view"
+    _description = "Guarantee Customer Report"
 
     @api.model
     def _get_report_values(self, docids, data=None):
@@ -52,58 +52,58 @@ class GuaranteeVendorReportReportView(models.AbstractModel):
         if data['form']['guarantee_type']:
             domains.append(('guarantee_type', '=', data['form']['guarantee_type']))
 
-        vendors = self.env['bank.vendor.guarantees'].search(domains, order='name asc')
+        customers = self.env['bank.customer.guarantees'].search(domains, order='name asc')
 
         if data['form']['print_all']:
-            vendors = self.env['bank.vendor.guarantees'].search([], order='name asc')
+            customers = self.env['bank.customer.guarantees'].search([], order='name asc')
 
         # if data['form']['start_date'] and data['form']['state'] and data['form']['guarantee_type']:
-        #     vendors = self.env['bank.vendor.guarantees'].search([('guarantee_type', '=', data['form']['guarantee_type']),
+        #     customers = self.env['bank.customer.guarantees'].search([('guarantee_type', '=', data['form']['guarantee_type']),
         #                                                 ('state', '>=', data['form']['state']),
         #                                                 ('issue_date', '>=', data['form']['start_date']),
         #                                                 ('issue_date', '<=', data['form']['end_date'])
         #                                                 ], order='name asc')
         #
         # if data['form']['start_date'] and data['form']['guarantee_type']:
-        #     vendors = self.env['bank.vendor.guarantees'].search([('guarantee_type', '=', data['form']['guarantee_type']),
+        #     customers = self.env['bank.customer.guarantees'].search([('guarantee_type', '=', data['form']['guarantee_type']),
         #                                                          ('issue_date', '>=', data['form']['start_date']),
         #                                                          ('issue_date', '<=', data['form']['end_date'])
         #                                                          ], order='name asc')
         # if data['form']['start_date'] and data['form']['state']:
-        #     vendors = self.env['bank.vendor.guarantees'].search([('state', '=', data['form']['state']),
+        #     customers = self.env['bank.customer.guarantees'].search([('state', '=', data['form']['state']),
         #                                                          ('issue_date', '>=', data['form']['start_date']),
         #                                                          ('issue_date', '<=', data['form']['end_date'])
         #                                                          ], order='name asc')
         #
         # if data['form']['start_date'] and data['form']['start_date']:
-        #     vendors = self.env['bank.vendor.guarantees'].search([('issue_date', '>=', data['form']['start_date']),
+        #     customers = self.env['bank.customer.guarantees'].search([('issue_date', '>=', data['form']['start_date']),
         #                                                          ('issue_date', '<=', data['form']['end_date'])
         #                                                          ], order='name asc')
         #
         # if data['form']['state']:
-        #     vendors = self.env['bank.vendor.guarantees'].search([('state', '=', data['form']['state'])
+        #     customers = self.env['bank.customer.guarantees'].search([('state', '=', data['form']['state'])
         #                                                 ], order='name asc')
         #
         # if data['form']['guarantee_type']:
-        #     vendors = self.env['bank.vendor.guarantees'].search([('guarantee_type', '=', data['form']['guarantee_type'])
+        #     customers = self.env['bank.customer.guarantees'].search([('guarantee_type', '=', data['form']['guarantee_type'])
         #                                                 ], order='name asc')
         #
         # if data['form']['guarantee_type'] and data['form']['state']:
-        #     vendors = self.env['bank.vendor.guarantees'].search([('guarantee_type', '=', data['form']['guarantee_type']),
+        #     customers = self.env['bank.customer.guarantees'].search([('guarantee_type', '=', data['form']['guarantee_type']),
         #                                                          ('state', '=', data['form']['state'])], order='name asc')
 
-        for vendor in vendors:
-            guarantee_type = dict(vendor._fields['guarantee_type'].selection).get(vendor.guarantee_type)
-            state = dict(vendor._fields['state'].selection).get(vendor.state)
+        for customer in customers:
+            guarantee_type = dict(customer._fields['guarantee_type'].selection).get(customer.guarantee_type)
+            state = dict(customer._fields['state'].selection).get(customer.state)
             docs.append({
                 'start_date': data['form']['start_date'],
                 'end_date': data['form']['end_date'],
-                'description': vendor.description,
-                'bank_name': vendor.bank_name.name,
-                'vendor_id': vendor.vendor_id.name,
+                'description': customer.description,
+                'bank_name': customer.bank_name.name,
+                'customer_id': customer.customer_id.name,
                 'guarantee_type': guarantee_type,
                 'state': state,
-                'guarantee_expense': vendor.guarantee_expense,
+                'guarantee_expense': customer.guarantee_expense,
             })
 
         return {

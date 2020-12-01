@@ -49,10 +49,12 @@ class BankVendorGuarantees(models.Model):
     guarantee_account = fields.Many2one('account.account', required=True) #from chart of accounts
     notes = fields.Text(string="Notes")
 
+    acc_refund = fields.Many2many('account.move.line', 'account_acc_refund', 'account_id', 'acc_refund_id',
+                                  string='Refunded Account')
     acc_move_id = fields.Many2one('account.move', string="Journal Entries", readonly=True)
     acc_paid = fields.Many2many('account.move.line')
-    acc_renew = fields.Many2many('account.move.line','account_acc_renew','account_id','acc_renew_id', string='Renewed Account')
-
+    acc_renew = fields.Many2many('account.move.line', 'account_acc_renew', 'account_id', 'acc_renew_id',
+                                 string='Renewed Account')
 
     @api.onchange('guarantee_type','guarantee_amount')
     def guarantee_rating(self):
@@ -286,7 +288,7 @@ class BankVendorGuarantees(models.Model):
             ]
         })
         self.acc_move_id = acc_move_ids
-
+        self.acc_refund = acc_move_ids.line_ids
         return self.write({'state': 'refund'})
 
     def button_set_draft(self):
@@ -360,7 +362,7 @@ class BankVendorGuaranteesWizard(models.Model):
     _name = 'bank.vendor.guarantees.wizard'
 
     renew = fields.Boolean('Renew ?')
-    new_end_date = fields.Date('Renew Date')
+    new_end_date = fields.Date('New EndDate')
 
     def end_state(self):
         record_id = self.env['bank.vendor.guarantees'].search([('id', '=', self.env.context.get('active_id'))])
@@ -386,7 +388,7 @@ class BankVendorGuaranteesWizard(models.Model):
             ]
         })
         record_id.acc_move_id = acc_move_ids
-
+        record_id.acc_refund = acc_move_ids.line_ids
         record_id.write({'state': 'refund'})
 
 
@@ -451,7 +453,7 @@ class BankVendorGuaranteesWizard(models.Model):
 class AccMoveInheriting(models.Model):
     _inherit = 'account.move'
 
-    related_guarantee = fields.Many2one('bank.vendor.guarantees', string="Related Guarantee", readonly=True)
+    related_guarantee = fields.Many2one('bank.vendor.guarantees', string="Vendor Guarantee", help="Related Vendor Guarantee Letter", readonly=True)
 
-    is_guarantee_letter = fields.Boolean('Is Guarantee Letter')
-    guarantee_letter = fields.Many2one('bank.vendor.guarantees', domain = [('guarantee_type','=','final_g')])
+    is_guarantee_letter = fields.Boolean('Is Guarantee Letter', help="Vendor Guarantee Letter")
+    guarantee_letter = fields.Many2one('bank.vendor.guarantees', domain = [('guarantee_type','=','final_g')], help="Vendor Guarantee Letter")
