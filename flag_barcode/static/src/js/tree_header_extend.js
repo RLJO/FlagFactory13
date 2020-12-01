@@ -16,7 +16,7 @@ odoo.define('flag_barcode.tree_header_extend', function (require){
         },
         create_selected_prods: function(){
 
-//        TO OPEN A WIZARD
+//        #$#$# TO OPEN A WIZARD #$#$#
          this.do_action({
                 name: "Open a wizard",
                 type: 'ir.actions.act_window',
@@ -27,7 +27,7 @@ odoo.define('flag_barcode.tree_header_extend', function (require){
                 target: 'new',
             });
 
-//        THIS IF U WANT TO EXECUTE A FUNCTION
+//        #$#$# TO EXECUTE A FUNCTION #$#$#
 //            return this._rpc({
 //                        model: 'generate.barcode.flag',
 //                        method: 'addproduct_action',

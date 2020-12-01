@@ -1,0 +1,1274 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* flag_barcode
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-11-29 14:26+0000\n"
+"PO-Revision-Date: 2020-11-29 14:26+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_affixment_flag__message_needaction
+#: model:ir.model.fields,field_description:flag_barcode.field_entity_flag__message_needaction
+#: model:ir.model.fields,field_description:flag_barcode.field_faces_flag__message_needaction
+#: model:ir.model.fields,field_description:flag_barcode.field_flag_category__message_needaction
+#: model:ir.model.fields,field_description:flag_barcode.field_flyration_flag__message_needaction
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__message_needaction
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag_line__message_needaction
+#: model:ir.model.fields,field_description:flag_barcode.field_image_flag__message_needaction
+#: model:ir.model.fields,field_description:flag_barcode.field_material_color_flag__message_needaction
+#: model:ir.model.fields,field_description:flag_barcode.field_material_flag__message_needaction
+#: model:ir.model.fields,field_description:flag_barcode.field_nomenclature_flag__message_needaction
+msgid "Action Needed"
+msgstr "إجراء مطلوب"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_affixment_flag__activity_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_entity_flag__activity_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_faces_flag__activity_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_flag_category__activity_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_flyration_flag__activity_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__activity_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag_line__activity_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_image_flag__activity_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_material_color_flag__activity_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_material_flag__activity_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_nomenclature_flag__activity_ids
+msgid "Activities"
+msgstr "الأنشطة"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_affixment_flag__activity_exception_decoration
+#: model:ir.model.fields,field_description:flag_barcode.field_entity_flag__activity_exception_decoration
+#: model:ir.model.fields,field_description:flag_barcode.field_faces_flag__activity_exception_decoration
+#: model:ir.model.fields,field_description:flag_barcode.field_flag_category__activity_exception_decoration
+#: model:ir.model.fields,field_description:flag_barcode.field_flyration_flag__activity_exception_decoration
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__activity_exception_decoration
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag_line__activity_exception_decoration
+#: model:ir.model.fields,field_description:flag_barcode.field_image_flag__activity_exception_decoration
+#: model:ir.model.fields,field_description:flag_barcode.field_material_color_flag__activity_exception_decoration
+#: model:ir.model.fields,field_description:flag_barcode.field_material_flag__activity_exception_decoration
+#: model:ir.model.fields,field_description:flag_barcode.field_nomenclature_flag__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "زخرفة استثناء النشاط"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_affixment_flag__activity_state
+#: model:ir.model.fields,field_description:flag_barcode.field_entity_flag__activity_state
+#: model:ir.model.fields,field_description:flag_barcode.field_faces_flag__activity_state
+#: model:ir.model.fields,field_description:flag_barcode.field_flag_category__activity_state
+#: model:ir.model.fields,field_description:flag_barcode.field_flyration_flag__activity_state
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__activity_state
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag_line__activity_state
+#: model:ir.model.fields,field_description:flag_barcode.field_image_flag__activity_state
+#: model:ir.model.fields,field_description:flag_barcode.field_material_color_flag__activity_state
+#: model:ir.model.fields,field_description:flag_barcode.field_material_flag__activity_state
+#: model:ir.model.fields,field_description:flag_barcode.field_nomenclature_flag__activity_state
+msgid "Activity State"
+msgstr "حالة النشاط"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_affixment_flag__affixment
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__affixment_id
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag_line__affixment_id
+#: model:ir.model.fields,field_description:flag_barcode.field_product_product__affixment_id
+#: model_terms:ir.ui.view,arch_db:flag_barcode.affixment_flag_form
+#: model_terms:ir.ui.view,arch_db:flag_barcode.search_generate_barcode
+#: model_terms:ir.ui.view,arch_db:flag_barcode.search_generate_barcode_line
+msgid "Affixment"
+msgstr "ملصق"
+
+#. module: flag_barcode
+#: model_terms:ir.ui.view,arch_db:flag_barcode.so_demo_select_products_view_form
+msgid "Apply"
+msgstr "تطبيق"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_affixment_flag__message_attachment_count
+#: model:ir.model.fields,field_description:flag_barcode.field_entity_flag__message_attachment_count
+#: model:ir.model.fields,field_description:flag_barcode.field_faces_flag__message_attachment_count
+#: model:ir.model.fields,field_description:flag_barcode.field_flag_category__message_attachment_count
+#: model:ir.model.fields,field_description:flag_barcode.field_flyration_flag__message_attachment_count
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__message_attachment_count
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag_line__message_attachment_count
+#: model:ir.model.fields,field_description:flag_barcode.field_image_flag__message_attachment_count
+#: model:ir.model.fields,field_description:flag_barcode.field_material_color_flag__message_attachment_count
+#: model:ir.model.fields,field_description:flag_barcode.field_material_flag__message_attachment_count
+#: model:ir.model.fields,field_description:flag_barcode.field_nomenclature_flag__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_affixment_flag__barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_entity_flag__barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_faces_flag__barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_flag_category__barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_flyration_flag__barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_image_flag__barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_material_color_flag__barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_material_flag__barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_nomenclature_flag__barcode
+#: model_terms:ir.ui.view,arch_db:flag_barcode.affixment_flag_form
+#: model_terms:ir.ui.view,arch_db:flag_barcode.entity_flag_form
+#: model_terms:ir.ui.view,arch_db:flag_barcode.faces_flag_form
+#: model_terms:ir.ui.view,arch_db:flag_barcode.flag_category_form
+#: model_terms:ir.ui.view,arch_db:flag_barcode.flyration_flag_form
+#: model_terms:ir.ui.view,arch_db:flag_barcode.image_flag_form
+#: model_terms:ir.ui.view,arch_db:flag_barcode.material_color_flag_form
+#: model_terms:ir.ui.view,arch_db:flag_barcode.material_flag_form
+#: model_terms:ir.ui.view,arch_db:flag_barcode.nomenclature_flag_form
+msgid "Barcode"
+msgstr "باركود"
+
+#. module: flag_barcode
+#: model_terms:ir.ui.view,arch_db:flag_barcode.so_demo_select_products_view_form
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_flag_category__category
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__category_id
+#: model_terms:ir.ui.view,arch_db:flag_barcode.search_generate_barcode
+#: model_terms:ir.ui.view,arch_db:flag_barcode.search_generate_barcode_line
+msgid "Category"
+msgstr "الفئة"
+
+#. module: flag_barcode
+#: model_terms:ir.ui.view,arch_db:flag_barcode.flag_category_form
+msgid "Category Name"
+msgstr "اسم الفئة"
+
+#. module: flag_barcode
+#: model_terms:ir.ui.view,arch_db:flag_barcode.nomenclature_flag_form
+msgid "Change To Standard"
+msgstr "تغيير إلى قياسي"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__color_selected
+msgid "Color Selected"
+msgstr "اللون المختار"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_so_select_products_demo__company_id
+msgid "Company"
+msgstr "الشركة"
+
+#. module: flag_barcode
+#: model:ir.model.fields.selection,name:flag_barcode.selection__generate_barcode_flag__product_type__consu
+msgid "Consumable"
+msgstr "استهلاكي"
+
+#. module: flag_barcode
+#: model:ir.model,name:flag_barcode.model_res_partner
+msgid "Contact"
+msgstr "جهة الاتصال"
+
+#. module: flag_barcode
+#: model_terms:ir.ui.view,arch_db:flag_barcode.generate_barcode_flag_form
+msgid "Create Product"
+msgstr "إنشاء منتح"
+
+#. module: flag_barcode
+#. openerp-web
+#: code:addons/flag_barcode/static/src/xml/tree_header_extend.xml:0
+#: model:ir.actions.act_window,name:flag_barcode.generate_barcode_flag_act_window
+#, python-format
+msgid "Create Quotation"
+msgstr "إنشاء فاتورة"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_affixment_flag__create_uid
+#: model:ir.model.fields,field_description:flag_barcode.field_entity_flag__create_uid
+#: model:ir.model.fields,field_description:flag_barcode.field_faces_flag__create_uid
+#: model:ir.model.fields,field_description:flag_barcode.field_flag_category__create_uid
+#: model:ir.model.fields,field_description:flag_barcode.field_flyration_flag__create_uid
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__create_uid
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag_line__create_uid
+#: model:ir.model.fields,field_description:flag_barcode.field_image_flag__create_uid
+#: model:ir.model.fields,field_description:flag_barcode.field_material_color_flag__create_uid
+#: model:ir.model.fields,field_description:flag_barcode.field_material_flag__create_uid
+#: model:ir.model.fields,field_description:flag_barcode.field_nomenclature_flag__create_uid
+#: model:ir.model.fields,field_description:flag_barcode.field_select_products_demo__create_uid
+#: model:ir.model.fields,field_description:flag_barcode.field_sh_message_wizard__create_uid
+#: model:ir.model.fields,field_description:flag_barcode.field_so_select_products_demo__create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_affixment_flag__create_date
+#: model:ir.model.fields,field_description:flag_barcode.field_entity_flag__create_date
+#: model:ir.model.fields,field_description:flag_barcode.field_faces_flag__create_date
+#: model:ir.model.fields,field_description:flag_barcode.field_flag_category__create_date
+#: model:ir.model.fields,field_description:flag_barcode.field_flyration_flag__create_date
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__create_date
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag_line__create_date
+#: model:ir.model.fields,field_description:flag_barcode.field_image_flag__create_date
+#: model:ir.model.fields,field_description:flag_barcode.field_material_color_flag__create_date
+#: model:ir.model.fields,field_description:flag_barcode.field_material_flag__create_date
+#: model:ir.model.fields,field_description:flag_barcode.field_nomenclature_flag__create_date
+#: model:ir.model.fields,field_description:flag_barcode.field_select_products_demo__create_date
+#: model:ir.model.fields,field_description:flag_barcode.field_sh_message_wizard__create_date
+#: model:ir.model.fields,field_description:flag_barcode.field_so_select_products_demo__create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__current_user
+#: model:ir.model.fields,field_description:flag_barcode.field_select_products_demo__current_user
+msgid "Current User"
+msgstr "المستخدم الحالي"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__description
+msgid "Description"
+msgstr "الوصف"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_affixment_flag__display_name
+#: model:ir.model.fields,field_description:flag_barcode.field_entity_flag__display_name
+#: model:ir.model.fields,field_description:flag_barcode.field_faces_flag__display_name
+#: model:ir.model.fields,field_description:flag_barcode.field_flag_category__display_name
+#: model:ir.model.fields,field_description:flag_barcode.field_flyration_flag__display_name
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__display_name
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag_line__display_name
+#: model:ir.model.fields,field_description:flag_barcode.field_image_flag__display_name
+#: model:ir.model.fields,field_description:flag_barcode.field_material_color_flag__display_name
+#: model:ir.model.fields,field_description:flag_barcode.field_material_flag__display_name
+#: model:ir.model.fields,field_description:flag_barcode.field_nomenclature_flag__display_name
+#: model:ir.model.fields,field_description:flag_barcode.field_select_products_demo__display_name
+#: model:ir.model.fields,field_description:flag_barcode.field_sh_message_wizard__display_name
+#: model:ir.model.fields,field_description:flag_barcode.field_so_select_products_demo__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_entity_flag__entity
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__entity_id
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag_line__entity_id
+#: model:ir.model.fields,field_description:flag_barcode.field_product_product__entity_id
+#: model_terms:ir.ui.view,arch_db:flag_barcode.entity_flag_form
+#: model_terms:ir.ui.view,arch_db:flag_barcode.search_generate_barcode
+#: model_terms:ir.ui.view,arch_db:flag_barcode.search_generate_barcode_line
+msgid "Entity"
+msgstr "الكيان"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_faces_flag__faces
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__faces_id
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag_line__faces_id
+#: model:ir.model.fields,field_description:flag_barcode.field_product_product__faces_id
+msgid "Face"
+msgstr "وجه"
+
+#. module: flag_barcode
+#: model_terms:ir.ui.view,arch_db:flag_barcode.search_generate_barcode
+#: model_terms:ir.ui.view,arch_db:flag_barcode.search_generate_barcode_line
+msgid "Faces"
+msgstr "وجوه"
+
+#. module: flag_barcode
+#: model:ir.actions.act_window,name:flag_barcode.affixment_flag_action
+#: model:ir.ui.menu,name:flag_barcode.affixment_flag_menu
+#: model_terms:ir.ui.view,arch_db:flag_barcode.generate_barcode_flag_form
+#: model_terms:ir.ui.view,arch_db:flag_barcode.generate_barcode_flag_line_form
+msgid "Flag Affixment"
+msgstr "ملصق العلم"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag_line__barcode
+#: model_terms:ir.ui.view,arch_db:flag_barcode.search_generate_barcode
+#: model_terms:ir.ui.view,arch_db:flag_barcode.search_generate_barcode_line
+msgid "Flag Barcode"
+msgstr "باركود العلم"
+
+#. module: flag_barcode
+#: model:ir.actions.act_window,name:flag_barcode.flag_category_action
+#: model:ir.ui.menu,name:flag_barcode.flag_category_menu
+#: model_terms:ir.ui.view,arch_db:flag_barcode.generate_barcode_flag_form
+#: model_terms:ir.ui.view,arch_db:flag_barcode.generate_barcode_flag_line_form
+msgid "Flag Category"
+msgstr "فئة العلم"
+
+#. module: flag_barcode
+#: model:ir.ui.menu,name:flag_barcode.flyration_flag_main_menu
+msgid "Flag Configuration"
+msgstr "خصائص العلم"
+
+#. module: flag_barcode
+#: model:ir.actions.act_window,name:flag_barcode.entity_flag_action
+#: model:ir.ui.menu,name:flag_barcode.entity_flag_menu
+#: model_terms:ir.ui.view,arch_db:flag_barcode.generate_barcode_flag_form
+#: model_terms:ir.ui.view,arch_db:flag_barcode.generate_barcode_flag_line_form
+msgid "Flag Entity"
+msgstr "كيان العلم"
+
+#. module: flag_barcode
+#: model:ir.actions.act_window,name:flag_barcode.faces_flag_action
+#: model_terms:ir.ui.view,arch_db:flag_barcode.faces_flag_form
+#: model_terms:ir.ui.view,arch_db:flag_barcode.generate_barcode_flag_form
+#: model_terms:ir.ui.view,arch_db:flag_barcode.generate_barcode_flag_line_form
+msgid "Flag Face"
+msgstr "وجه العلم"
+
+#. module: flag_barcode
+#: model:ir.ui.menu,name:flag_barcode.faces_flag_menu
+msgid "Flag Faces"
+msgstr ""
+
+#. module: flag_barcode
+#: model:ir.ui.menu,name:flag_barcode.flyration_flag_menu
+msgid "Flag FlyRatio"
+msgstr "وجوه العلم"
+
+#. module: flag_barcode
+#: model:ir.actions.act_window,name:flag_barcode.flyration_flag_action
+#: model_terms:ir.ui.view,arch_db:flag_barcode.generate_barcode_flag_form
+#: model_terms:ir.ui.view,arch_db:flag_barcode.generate_barcode_flag_line_form
+msgid "Flag Flyratio"
+msgstr "نسبة طيران العلم"
+
+#. module: flag_barcode
+#: model:ir.actions.act_window,name:flag_barcode.image_flag_action
+#: model:ir.ui.menu,name:flag_barcode.image_flag_menu
+#: model_terms:ir.ui.view,arch_db:flag_barcode.generate_barcode_flag_form
+#: model_terms:ir.ui.view,arch_db:flag_barcode.generate_barcode_flag_line_form
+#: model_terms:ir.ui.view,arch_db:flag_barcode.image_flag_form
+msgid "Flag Image"
+msgstr "صورة العلم"
+
+#. module: flag_barcode
+#: model:ir.actions.act_window,name:flag_barcode.material_flag_action
+#: model_terms:ir.ui.view,arch_db:flag_barcode.generate_barcode_flag_form
+#: model_terms:ir.ui.view,arch_db:flag_barcode.generate_barcode_flag_line_form
+msgid "Flag Material"
+msgstr "مكونات العلم"
+
+#. module: flag_barcode
+#: model:ir.actions.act_window,name:flag_barcode.material_color_flag_action
+msgid "Flag Material Color"
+msgstr "لون مكونات العلم"
+
+#. module: flag_barcode
+#: model_terms:ir.ui.view,arch_db:flag_barcode.material_flag_form
+msgid "Flag Material Type"
+msgstr "نوع مكونات العلم"
+
+#. module: flag_barcode
+#: model:ir.actions.act_window,name:flag_barcode.nomenclature_flag_action
+#: model:ir.ui.menu,name:flag_barcode.nomenclature_flag_menu
+#: model_terms:ir.ui.view,arch_db:flag_barcode.generate_barcode_flag_form
+#: model_terms:ir.ui.view,arch_db:flag_barcode.generate_barcode_flag_line_form
+#: model_terms:ir.ui.view,arch_db:flag_barcode.nomenclature_flag_form
+msgid "Flag Nomenclature"
+msgstr "تسمية العلم"
+
+#. module: flag_barcode
+#: model:ir.module.category,name:flag_barcode.module_category_flag_barcode
+msgid "Flags Barcode"
+msgstr "باركود الأعلام"
+
+#. module: flag_barcode
+#: model:res.groups,name:flag_barcode.group_flag_barcode_manager1
+msgid "Flags Barcode MANAGER"
+msgstr "باركود الأعلام - مدير"
+
+#. module: flag_barcode
+#: model:res.groups,name:flag_barcode.group_flag_barcode_user1
+msgid "Flags Barcode USER"
+msgstr "باركود الأعلام - مستخدم"
+
+#. module: flag_barcode
+#: model_terms:ir.ui.view,arch_db:flag_barcode.search_generate_barcode
+#: model_terms:ir.ui.view,arch_db:flag_barcode.search_generate_barcode_line
+msgid "Flyratio"
+msgstr "نسبة الطيران"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag_line__category_id
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag_line__flyration_id
+#: model:ir.model.fields,field_description:flag_barcode.field_product_product__category_id
+#: model:ir.model.fields,field_description:flag_barcode.field_product_product__flyration_id
+#: model_terms:ir.ui.view,arch_db:flag_barcode.flyration_flag_form
+msgid "Flyration"
+msgstr "نسبة الطيران"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_affixment_flag__message_follower_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_entity_flag__message_follower_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_faces_flag__message_follower_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_flag_category__message_follower_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_flyration_flag__message_follower_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__message_follower_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag_line__message_follower_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_image_flag__message_follower_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_material_color_flag__message_follower_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_material_flag__message_follower_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_nomenclature_flag__message_follower_ids
+msgid "Followers"
+msgstr "المتابعون"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_affixment_flag__message_channel_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_entity_flag__message_channel_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_faces_flag__message_channel_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_flag_category__message_channel_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_flyration_flag__message_channel_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__message_channel_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag_line__message_channel_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_image_flag__message_channel_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_material_color_flag__message_channel_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_material_flag__message_channel_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_nomenclature_flag__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "المتابعون (القنوات)"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_affixment_flag__message_partner_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_entity_flag__message_partner_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_faces_flag__message_partner_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_flag_category__message_partner_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_flyration_flag__message_partner_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__message_partner_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag_line__message_partner_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_image_flag__message_partner_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_material_color_flag__message_partner_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_material_flag__message_partner_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_nomenclature_flag__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعون (الشركاء)"
+
+#. module: flag_barcode
+#: model:ir.ui.menu,name:flag_barcode.flyration_flag_main_menu_root
+#: model:ir.ui.menu,name:flag_barcode.generate_flag_menu
+#: model_terms:ir.ui.view,arch_db:flag_barcode.generate_barcode_flag_form
+msgid "Generate Barcode"
+msgstr "توليد باركود"
+
+#. module: flag_barcode
+#: model:ir.actions.act_window,name:flag_barcode.generate_barcode_flag_action
+#: model:ir.actions.act_window,name:flag_barcode.generate_barcode_flag_line_action
+msgid "Generate Barcode Flag"
+msgstr "باركود الأعلام المُنشأ"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag_line__generate_code
+msgid "Generate Code"
+msgstr "توليد باركود"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__generate_code_lines
+msgid "Generate Code Lines"
+msgstr "عناصر الباركود المولد"
+
+#. module: flag_barcode
+#: model:ir.ui.menu,name:flag_barcode.generate_barcode_flag_menu
+msgid "Generate Flag Barcode"
+msgstr "توليد باركود العلم"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_product_product__generate_code
+#: model:ir.model.fields,field_description:flag_barcode.field_so_select_products_demo__generated_barcode_id
+msgid "Generated Barcode"
+msgstr "الباركود المُنشأ"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__created_product
+msgid "Generated Product"
+msgstr "المنتج المُنشأ"
+
+#. module: flag_barcode
+#: model_terms:ir.ui.view,arch_db:flag_barcode.search_generate_barcode
+#: model_terms:ir.ui.view,arch_db:flag_barcode.search_generate_barcode_line
+msgid "Group By"
+msgstr "تجميع حسب"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__height_nomenclature
+#: model:ir.model.fields,field_description:flag_barcode.field_nomenclature_flag__height
+#: model:ir.model.fields,field_description:flag_barcode.field_product_product__height_nomenclature
+#: model_terms:ir.ui.view,arch_db:flag_barcode.generate_barcode_flag_form
+#: model_terms:ir.ui.view,arch_db:flag_barcode.nomenclature_flag_form
+msgid "Height"
+msgstr "الارتفاع"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_affixment_flag__id
+#: model:ir.model.fields,field_description:flag_barcode.field_entity_flag__id
+#: model:ir.model.fields,field_description:flag_barcode.field_faces_flag__id
+#: model:ir.model.fields,field_description:flag_barcode.field_flag_category__id
+#: model:ir.model.fields,field_description:flag_barcode.field_flyration_flag__id
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__id
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag_line__id
+#: model:ir.model.fields,field_description:flag_barcode.field_image_flag__id
+#: model:ir.model.fields,field_description:flag_barcode.field_material_color_flag__id
+#: model:ir.model.fields,field_description:flag_barcode.field_material_flag__id
+#: model:ir.model.fields,field_description:flag_barcode.field_nomenclature_flag__id
+#: model:ir.model.fields,field_description:flag_barcode.field_select_products_demo__id
+#: model:ir.model.fields,field_description:flag_barcode.field_sh_message_wizard__id
+#: model:ir.model.fields,field_description:flag_barcode.field_so_select_products_demo__id
+msgid "ID"
+msgstr "المُعرف"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_entity_flag__iso
+#: model_terms:ir.ui.view,arch_db:flag_barcode.entity_flag_form
+msgid "ISO"
+msgstr ""
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_affixment_flag__activity_exception_icon
+#: model:ir.model.fields,field_description:flag_barcode.field_entity_flag__activity_exception_icon
+#: model:ir.model.fields,field_description:flag_barcode.field_faces_flag__activity_exception_icon
+#: model:ir.model.fields,field_description:flag_barcode.field_flag_category__activity_exception_icon
+#: model:ir.model.fields,field_description:flag_barcode.field_flyration_flag__activity_exception_icon
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__activity_exception_icon
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag_line__activity_exception_icon
+#: model:ir.model.fields,field_description:flag_barcode.field_image_flag__activity_exception_icon
+#: model:ir.model.fields,field_description:flag_barcode.field_material_color_flag__activity_exception_icon
+#: model:ir.model.fields,field_description:flag_barcode.field_material_flag__activity_exception_icon
+#: model:ir.model.fields,field_description:flag_barcode.field_nomenclature_flag__activity_exception_icon
+msgid "Icon"
+msgstr "الأيقونة"
+
+#. module: flag_barcode
+#: model:ir.model.fields,help:flag_barcode.field_affixment_flag__activity_exception_icon
+#: model:ir.model.fields,help:flag_barcode.field_entity_flag__activity_exception_icon
+#: model:ir.model.fields,help:flag_barcode.field_faces_flag__activity_exception_icon
+#: model:ir.model.fields,help:flag_barcode.field_flag_category__activity_exception_icon
+#: model:ir.model.fields,help:flag_barcode.field_flyration_flag__activity_exception_icon
+#: model:ir.model.fields,help:flag_barcode.field_generate_barcode_flag__activity_exception_icon
+#: model:ir.model.fields,help:flag_barcode.field_generate_barcode_flag_line__activity_exception_icon
+#: model:ir.model.fields,help:flag_barcode.field_image_flag__activity_exception_icon
+#: model:ir.model.fields,help:flag_barcode.field_material_color_flag__activity_exception_icon
+#: model:ir.model.fields,help:flag_barcode.field_material_flag__activity_exception_icon
+#: model:ir.model.fields,help:flag_barcode.field_nomenclature_flag__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "الأيقونة للإشارة إلى استثناء النشاط"
+
+#. module: flag_barcode
+#: model:ir.model.fields,help:flag_barcode.field_affixment_flag__message_needaction
+#: model:ir.model.fields,help:flag_barcode.field_affixment_flag__message_unread
+#: model:ir.model.fields,help:flag_barcode.field_entity_flag__message_needaction
+#: model:ir.model.fields,help:flag_barcode.field_entity_flag__message_unread
+#: model:ir.model.fields,help:flag_barcode.field_faces_flag__message_needaction
+#: model:ir.model.fields,help:flag_barcode.field_faces_flag__message_unread
+#: model:ir.model.fields,help:flag_barcode.field_flag_category__message_needaction
+#: model:ir.model.fields,help:flag_barcode.field_flag_category__message_unread
+#: model:ir.model.fields,help:flag_barcode.field_flyration_flag__message_needaction
+#: model:ir.model.fields,help:flag_barcode.field_flyration_flag__message_unread
+#: model:ir.model.fields,help:flag_barcode.field_generate_barcode_flag__message_needaction
+#: model:ir.model.fields,help:flag_barcode.field_generate_barcode_flag__message_unread
+#: model:ir.model.fields,help:flag_barcode.field_generate_barcode_flag_line__message_needaction
+#: model:ir.model.fields,help:flag_barcode.field_generate_barcode_flag_line__message_unread
+#: model:ir.model.fields,help:flag_barcode.field_image_flag__message_needaction
+#: model:ir.model.fields,help:flag_barcode.field_image_flag__message_unread
+#: model:ir.model.fields,help:flag_barcode.field_material_color_flag__message_needaction
+#: model:ir.model.fields,help:flag_barcode.field_material_color_flag__message_unread
+#: model:ir.model.fields,help:flag_barcode.field_material_flag__message_needaction
+#: model:ir.model.fields,help:flag_barcode.field_material_flag__message_unread
+#: model:ir.model.fields,help:flag_barcode.field_nomenclature_flag__message_needaction
+#: model:ir.model.fields,help:flag_barcode.field_nomenclature_flag__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "إذا كان محددًا، فهناك رسائل جديدة تحتاج لرؤيتها."
+
+#. module: flag_barcode
+#: model:ir.model.fields,help:flag_barcode.field_affixment_flag__message_has_error
+#: model:ir.model.fields,help:flag_barcode.field_affixment_flag__message_has_sms_error
+#: model:ir.model.fields,help:flag_barcode.field_entity_flag__message_has_error
+#: model:ir.model.fields,help:flag_barcode.field_entity_flag__message_has_sms_error
+#: model:ir.model.fields,help:flag_barcode.field_faces_flag__message_has_error
+#: model:ir.model.fields,help:flag_barcode.field_faces_flag__message_has_sms_error
+#: model:ir.model.fields,help:flag_barcode.field_flag_category__message_has_error
+#: model:ir.model.fields,help:flag_barcode.field_flag_category__message_has_sms_error
+#: model:ir.model.fields,help:flag_barcode.field_flyration_flag__message_has_error
+#: model:ir.model.fields,help:flag_barcode.field_flyration_flag__message_has_sms_error
+#: model:ir.model.fields,help:flag_barcode.field_generate_barcode_flag__message_has_error
+#: model:ir.model.fields,help:flag_barcode.field_generate_barcode_flag__message_has_sms_error
+#: model:ir.model.fields,help:flag_barcode.field_generate_barcode_flag_line__message_has_error
+#: model:ir.model.fields,help:flag_barcode.field_generate_barcode_flag_line__message_has_sms_error
+#: model:ir.model.fields,help:flag_barcode.field_image_flag__message_has_error
+#: model:ir.model.fields,help:flag_barcode.field_image_flag__message_has_sms_error
+#: model:ir.model.fields,help:flag_barcode.field_material_color_flag__message_has_error
+#: model:ir.model.fields,help:flag_barcode.field_material_color_flag__message_has_sms_error
+#: model:ir.model.fields,help:flag_barcode.field_material_flag__message_has_error
+#: model:ir.model.fields,help:flag_barcode.field_material_flag__message_has_sms_error
+#: model:ir.model.fields,help:flag_barcode.field_nomenclature_flag__message_has_error
+#: model:ir.model.fields,help:flag_barcode.field_nomenclature_flag__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا كان محددًا، فقد حدث خطأ في تسليم بعض الرسائل."
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__image
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__image_id
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag_line__image_id
+#: model:ir.model.fields,field_description:flag_barcode.field_image_flag__image
+#: model:ir.model.fields,field_description:flag_barcode.field_product_product__image_id
+msgid "Image"
+msgstr "صورة"
+
+#. module: flag_barcode
+#: model_terms:ir.ui.view,arch_db:flag_barcode.search_generate_barcode
+#: model_terms:ir.ui.view,arch_db:flag_barcode.search_generate_barcode_line
+msgid "Images"
+msgstr ""
+
+#. module: flag_barcode
+#: model_terms:ir.ui.view,arch_db:flag_barcode.product_template_inherit_custom
+msgid "Information"
+msgstr "معلومات"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_affixment_flag__message_is_follower
+#: model:ir.model.fields,field_description:flag_barcode.field_entity_flag__message_is_follower
+#: model:ir.model.fields,field_description:flag_barcode.field_faces_flag__message_is_follower
+#: model:ir.model.fields,field_description:flag_barcode.field_flag_category__message_is_follower
+#: model:ir.model.fields,field_description:flag_barcode.field_flyration_flag__message_is_follower
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__message_is_follower
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag_line__message_is_follower
+#: model:ir.model.fields,field_description:flag_barcode.field_image_flag__message_is_follower
+#: model:ir.model.fields,field_description:flag_barcode.field_material_color_flag__message_is_follower
+#: model:ir.model.fields,field_description:flag_barcode.field_material_flag__message_is_follower
+#: model:ir.model.fields,field_description:flag_barcode.field_nomenclature_flag__message_is_follower
+msgid "Is Follower"
+msgstr "متابع"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_affixment_flag____last_update
+#: model:ir.model.fields,field_description:flag_barcode.field_entity_flag____last_update
+#: model:ir.model.fields,field_description:flag_barcode.field_faces_flag____last_update
+#: model:ir.model.fields,field_description:flag_barcode.field_flag_category____last_update
+#: model:ir.model.fields,field_description:flag_barcode.field_flyration_flag____last_update
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag____last_update
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag_line____last_update
+#: model:ir.model.fields,field_description:flag_barcode.field_image_flag____last_update
+#: model:ir.model.fields,field_description:flag_barcode.field_material_color_flag____last_update
+#: model:ir.model.fields,field_description:flag_barcode.field_material_flag____last_update
+#: model:ir.model.fields,field_description:flag_barcode.field_nomenclature_flag____last_update
+#: model:ir.model.fields,field_description:flag_barcode.field_select_products_demo____last_update
+#: model:ir.model.fields,field_description:flag_barcode.field_sh_message_wizard____last_update
+#: model:ir.model.fields,field_description:flag_barcode.field_so_select_products_demo____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_affixment_flag__write_uid
+#: model:ir.model.fields,field_description:flag_barcode.field_entity_flag__write_uid
+#: model:ir.model.fields,field_description:flag_barcode.field_faces_flag__write_uid
+#: model:ir.model.fields,field_description:flag_barcode.field_flag_category__write_uid
+#: model:ir.model.fields,field_description:flag_barcode.field_flyration_flag__write_uid
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__write_uid
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag_line__write_uid
+#: model:ir.model.fields,field_description:flag_barcode.field_image_flag__write_uid
+#: model:ir.model.fields,field_description:flag_barcode.field_material_color_flag__write_uid
+#: model:ir.model.fields,field_description:flag_barcode.field_material_flag__write_uid
+#: model:ir.model.fields,field_description:flag_barcode.field_nomenclature_flag__write_uid
+#: model:ir.model.fields,field_description:flag_barcode.field_select_products_demo__write_uid
+#: model:ir.model.fields,field_description:flag_barcode.field_sh_message_wizard__write_uid
+#: model:ir.model.fields,field_description:flag_barcode.field_so_select_products_demo__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_affixment_flag__write_date
+#: model:ir.model.fields,field_description:flag_barcode.field_entity_flag__write_date
+#: model:ir.model.fields,field_description:flag_barcode.field_faces_flag__write_date
+#: model:ir.model.fields,field_description:flag_barcode.field_flag_category__write_date
+#: model:ir.model.fields,field_description:flag_barcode.field_flyration_flag__write_date
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__write_date
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag_line__write_date
+#: model:ir.model.fields,field_description:flag_barcode.field_image_flag__write_date
+#: model:ir.model.fields,field_description:flag_barcode.field_material_color_flag__write_date
+#: model:ir.model.fields,field_description:flag_barcode.field_material_flag__write_date
+#: model:ir.model.fields,field_description:flag_barcode.field_nomenclature_flag__write_date
+#: model:ir.model.fields,field_description:flag_barcode.field_select_products_demo__write_date
+#: model:ir.model.fields,field_description:flag_barcode.field_sh_message_wizard__write_date
+#: model:ir.model.fields,field_description:flag_barcode.field_so_select_products_demo__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_affixment_flag__message_main_attachment_id
+#: model:ir.model.fields,field_description:flag_barcode.field_entity_flag__message_main_attachment_id
+#: model:ir.model.fields,field_description:flag_barcode.field_faces_flag__message_main_attachment_id
+#: model:ir.model.fields,field_description:flag_barcode.field_flag_category__message_main_attachment_id
+#: model:ir.model.fields,field_description:flag_barcode.field_flyration_flag__message_main_attachment_id
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__message_main_attachment_id
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag_line__message_main_attachment_id
+#: model:ir.model.fields,field_description:flag_barcode.field_image_flag__message_main_attachment_id
+#: model:ir.model.fields,field_description:flag_barcode.field_material_color_flag__message_main_attachment_id
+#: model:ir.model.fields,field_description:flag_barcode.field_material_flag__message_main_attachment_id
+#: model:ir.model.fields,field_description:flag_barcode.field_nomenclature_flag__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "المرفق الرئيسي"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__material_id
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag_line__material_id
+#: model:ir.model.fields,field_description:flag_barcode.field_product_product__material_id
+#: model_terms:ir.ui.view,arch_db:flag_barcode.search_generate_barcode
+#: model_terms:ir.ui.view,arch_db:flag_barcode.search_generate_barcode_line
+msgid "Material"
+msgstr "مواد"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__material_color_id
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag_line__material_color_id
+#: model:ir.model.fields,field_description:flag_barcode.field_material_color_flag__color
+#: model:ir.model.fields,field_description:flag_barcode.field_product_product__material_color_id
+#: model:ir.ui.menu,name:flag_barcode.material_color_flag_menu
+#: model_terms:ir.ui.view,arch_db:flag_barcode.generate_barcode_flag_form
+#: model_terms:ir.ui.view,arch_db:flag_barcode.generate_barcode_flag_line_form
+#: model_terms:ir.ui.view,arch_db:flag_barcode.material_color_flag_form
+msgid "Material Color"
+msgstr "لون المواد"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_material_flag__material_type
+#: model:ir.ui.menu,name:flag_barcode.material_flag_menu
+msgid "Material Type"
+msgstr "نوع المواد"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_sh_message_wizard__name
+#: model_terms:ir.ui.view,arch_db:flag_barcode.sh_message_wizard
+msgid "Message"
+msgstr "الرسالة"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_affixment_flag__message_has_error
+#: model:ir.model.fields,field_description:flag_barcode.field_entity_flag__message_has_error
+#: model:ir.model.fields,field_description:flag_barcode.field_faces_flag__message_has_error
+#: model:ir.model.fields,field_description:flag_barcode.field_flag_category__message_has_error
+#: model:ir.model.fields,field_description:flag_barcode.field_flyration_flag__message_has_error
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__message_has_error
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag_line__message_has_error
+#: model:ir.model.fields,field_description:flag_barcode.field_image_flag__message_has_error
+#: model:ir.model.fields,field_description:flag_barcode.field_material_color_flag__message_has_error
+#: model:ir.model.fields,field_description:flag_barcode.field_material_flag__message_has_error
+#: model:ir.model.fields,field_description:flag_barcode.field_nomenclature_flag__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسائل"
+
+#. module: flag_barcode
+#: model:ir.model,name:flag_barcode.model_sh_message_wizard
+msgid "Message wizard to display warnings, alert ,success messages"
+msgstr ""
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_affixment_flag__message_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_entity_flag__message_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_faces_flag__message_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_flag_category__message_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_flyration_flag__message_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__message_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag_line__message_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_image_flag__message_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_material_color_flag__message_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_material_flag__message_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_nomenclature_flag__message_ids
+msgid "Messages"
+msgstr "الرسائل"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_product_category__name
+#: model:ir.model.fields,field_description:flag_barcode.field_res_partner__name
+#: model:ir.model.fields,field_description:flag_barcode.field_res_users__name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: flag_barcode
+#: code:addons/flag_barcode/models/entity_flag.py:0
+#: code:addons/flag_barcode/models/entity_flag.py:0
+#: code:addons/flag_barcode/models/entity_flag.py:0
+#, python-format
+msgid "New"
+msgstr "جديد"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_affixment_flag__activity_date_deadline
+#: model:ir.model.fields,field_description:flag_barcode.field_entity_flag__activity_date_deadline
+#: model:ir.model.fields,field_description:flag_barcode.field_faces_flag__activity_date_deadline
+#: model:ir.model.fields,field_description:flag_barcode.field_flag_category__activity_date_deadline
+#: model:ir.model.fields,field_description:flag_barcode.field_flyration_flag__activity_date_deadline
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__activity_date_deadline
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag_line__activity_date_deadline
+#: model:ir.model.fields,field_description:flag_barcode.field_image_flag__activity_date_deadline
+#: model:ir.model.fields,field_description:flag_barcode.field_material_color_flag__activity_date_deadline
+#: model:ir.model.fields,field_description:flag_barcode.field_material_flag__activity_date_deadline
+#: model:ir.model.fields,field_description:flag_barcode.field_nomenclature_flag__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "الموعد النهائي للنشاط التالي"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_affixment_flag__activity_summary
+#: model:ir.model.fields,field_description:flag_barcode.field_entity_flag__activity_summary
+#: model:ir.model.fields,field_description:flag_barcode.field_faces_flag__activity_summary
+#: model:ir.model.fields,field_description:flag_barcode.field_flag_category__activity_summary
+#: model:ir.model.fields,field_description:flag_barcode.field_flyration_flag__activity_summary
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__activity_summary
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag_line__activity_summary
+#: model:ir.model.fields,field_description:flag_barcode.field_image_flag__activity_summary
+#: model:ir.model.fields,field_description:flag_barcode.field_material_color_flag__activity_summary
+#: model:ir.model.fields,field_description:flag_barcode.field_material_flag__activity_summary
+#: model:ir.model.fields,field_description:flag_barcode.field_nomenclature_flag__activity_summary
+msgid "Next Activity Summary"
+msgstr "ملخص النشاط التالي"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_affixment_flag__activity_type_id
+#: model:ir.model.fields,field_description:flag_barcode.field_entity_flag__activity_type_id
+#: model:ir.model.fields,field_description:flag_barcode.field_faces_flag__activity_type_id
+#: model:ir.model.fields,field_description:flag_barcode.field_flag_category__activity_type_id
+#: model:ir.model.fields,field_description:flag_barcode.field_flyration_flag__activity_type_id
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__activity_type_id
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag_line__activity_type_id
+#: model:ir.model.fields,field_description:flag_barcode.field_image_flag__activity_type_id
+#: model:ir.model.fields,field_description:flag_barcode.field_material_color_flag__activity_type_id
+#: model:ir.model.fields,field_description:flag_barcode.field_material_flag__activity_type_id
+#: model:ir.model.fields,field_description:flag_barcode.field_nomenclature_flag__activity_type_id
+msgid "Next Activity Type"
+msgstr "نوع النشاط التالي"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__nomenclature_id
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag_line__nomenclature_id
+#: model:ir.model.fields,field_description:flag_barcode.field_nomenclature_flag__nomenclature
+#: model:ir.model.fields,field_description:flag_barcode.field_product_product__nomenclature_id
+#: model_terms:ir.ui.view,arch_db:flag_barcode.search_generate_barcode
+#: model_terms:ir.ui.view,arch_db:flag_barcode.search_generate_barcode_line
+msgid "Nomenclature"
+msgstr "تسمية"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_affixment_flag__message_needaction_counter
+#: model:ir.model.fields,field_description:flag_barcode.field_entity_flag__message_needaction_counter
+#: model:ir.model.fields,field_description:flag_barcode.field_faces_flag__message_needaction_counter
+#: model:ir.model.fields,field_description:flag_barcode.field_flag_category__message_needaction_counter
+#: model:ir.model.fields,field_description:flag_barcode.field_flyration_flag__message_needaction_counter
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__message_needaction_counter
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag_line__message_needaction_counter
+#: model:ir.model.fields,field_description:flag_barcode.field_image_flag__message_needaction_counter
+#: model:ir.model.fields,field_description:flag_barcode.field_material_color_flag__message_needaction_counter
+#: model:ir.model.fields,field_description:flag_barcode.field_material_flag__message_needaction_counter
+#: model:ir.model.fields,field_description:flag_barcode.field_nomenclature_flag__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_affixment_flag__message_has_error_counter
+#: model:ir.model.fields,field_description:flag_barcode.field_entity_flag__message_has_error_counter
+#: model:ir.model.fields,field_description:flag_barcode.field_faces_flag__message_has_error_counter
+#: model:ir.model.fields,field_description:flag_barcode.field_flag_category__message_has_error_counter
+#: model:ir.model.fields,field_description:flag_barcode.field_flyration_flag__message_has_error_counter
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__message_has_error_counter
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag_line__message_has_error_counter
+#: model:ir.model.fields,field_description:flag_barcode.field_image_flag__message_has_error_counter
+#: model:ir.model.fields,field_description:flag_barcode.field_material_color_flag__message_has_error_counter
+#: model:ir.model.fields,field_description:flag_barcode.field_material_flag__message_has_error_counter
+#: model:ir.model.fields,field_description:flag_barcode.field_nomenclature_flag__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الاخطاء"
+
+#. module: flag_barcode
+#: model:ir.model.fields,help:flag_barcode.field_affixment_flag__message_needaction_counter
+#: model:ir.model.fields,help:flag_barcode.field_entity_flag__message_needaction_counter
+#: model:ir.model.fields,help:flag_barcode.field_faces_flag__message_needaction_counter
+#: model:ir.model.fields,help:flag_barcode.field_flag_category__message_needaction_counter
+#: model:ir.model.fields,help:flag_barcode.field_flyration_flag__message_needaction_counter
+#: model:ir.model.fields,help:flag_barcode.field_generate_barcode_flag__message_needaction_counter
+#: model:ir.model.fields,help:flag_barcode.field_generate_barcode_flag_line__message_needaction_counter
+#: model:ir.model.fields,help:flag_barcode.field_image_flag__message_needaction_counter
+#: model:ir.model.fields,help:flag_barcode.field_material_color_flag__message_needaction_counter
+#: model:ir.model.fields,help:flag_barcode.field_material_flag__message_needaction_counter
+#: model:ir.model.fields,help:flag_barcode.field_nomenclature_flag__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "عدد الرسائل التي تتطلب إجراء"
+
+#. module: flag_barcode
+#: model:ir.model.fields,help:flag_barcode.field_affixment_flag__message_has_error_counter
+#: model:ir.model.fields,help:flag_barcode.field_entity_flag__message_has_error_counter
+#: model:ir.model.fields,help:flag_barcode.field_faces_flag__message_has_error_counter
+#: model:ir.model.fields,help:flag_barcode.field_flag_category__message_has_error_counter
+#: model:ir.model.fields,help:flag_barcode.field_flyration_flag__message_has_error_counter
+#: model:ir.model.fields,help:flag_barcode.field_generate_barcode_flag__message_has_error_counter
+#: model:ir.model.fields,help:flag_barcode.field_generate_barcode_flag_line__message_has_error_counter
+#: model:ir.model.fields,help:flag_barcode.field_image_flag__message_has_error_counter
+#: model:ir.model.fields,help:flag_barcode.field_material_color_flag__message_has_error_counter
+#: model:ir.model.fields,help:flag_barcode.field_material_flag__message_has_error_counter
+#: model:ir.model.fields,help:flag_barcode.field_nomenclature_flag__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل الحادث بها خطأ في التسليم"
+
+#. module: flag_barcode
+#: model:ir.model.fields,help:flag_barcode.field_affixment_flag__message_unread_counter
+#: model:ir.model.fields,help:flag_barcode.field_entity_flag__message_unread_counter
+#: model:ir.model.fields,help:flag_barcode.field_faces_flag__message_unread_counter
+#: model:ir.model.fields,help:flag_barcode.field_flag_category__message_unread_counter
+#: model:ir.model.fields,help:flag_barcode.field_flyration_flag__message_unread_counter
+#: model:ir.model.fields,help:flag_barcode.field_generate_barcode_flag__message_unread_counter
+#: model:ir.model.fields,help:flag_barcode.field_generate_barcode_flag_line__message_unread_counter
+#: model:ir.model.fields,help:flag_barcode.field_image_flag__message_unread_counter
+#: model:ir.model.fields,help:flag_barcode.field_material_color_flag__message_unread_counter
+#: model:ir.model.fields,help:flag_barcode.field_material_flag__message_unread_counter
+#: model:ir.model.fields,help:flag_barcode.field_nomenclature_flag__message_unread_counter
+msgid "Number of unread messages"
+msgstr "عدد الرسائل الجديدة"
+
+#. module: flag_barcode
+#: model_terms:ir.ui.view,arch_db:flag_barcode.sh_message_wizard
+msgid "OK"
+msgstr "موافق"
+
+#. module: flag_barcode
+#: model_terms:ir.ui.view,arch_db:flag_barcode.so_demo_select_products_view_form
+msgid "Or"
+msgstr "أو"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_so_select_products_demo__partner_id
+msgid "Partner"
+msgstr "شريك"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_affixment_flag__place_holder
+#: model:ir.model.fields,field_description:flag_barcode.field_entity_flag__place_holder
+#: model:ir.model.fields,field_description:flag_barcode.field_faces_flag__place_holder
+#: model:ir.model.fields,field_description:flag_barcode.field_flag_category__place_holder
+#: model:ir.model.fields,field_description:flag_barcode.field_flyration_flag__place_holder
+#: model:ir.model.fields,field_description:flag_barcode.field_image_flag__place_holder
+#: model:ir.model.fields,field_description:flag_barcode.field_material_color_flag__place_holder
+#: model:ir.model.fields,field_description:flag_barcode.field_material_flag__place_holder
+#: model:ir.model.fields,field_description:flag_barcode.field_nomenclature_flag__place_holder
+msgid "Place Holder"
+msgstr ""
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__prod_check
+msgid "Prod Check"
+msgstr "فحص المنتج"
+
+#. module: flag_barcode
+#: model:ir.model,name:flag_barcode.model_product_product
+#: model:ir.model.fields,field_description:flag_barcode.field_select_products_demo__created_product
+msgid "Product"
+msgstr "المنتج"
+
+#. module: flag_barcode
+#: model:ir.model,name:flag_barcode.model_product_category
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__product_category
+msgid "Product Category"
+msgstr "فئة المنتج"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__product_name
+msgid "Product Name"
+msgstr "اسم المنتج"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__product_type
+msgid "Product Type"
+msgstr "نوع المنتج"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_entity_flag__ratio_id
+#: model:ir.model.fields,field_description:flag_barcode.field_flyration_flag__ratio_related
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__flyration_id
+#: model_terms:ir.ui.view,arch_db:flag_barcode.entity_flag_form
+#: model_terms:ir.ui.view,arch_db:flag_barcode.nomenclature_flag_form
+msgid "Ratio"
+msgstr "النسبة"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_nomenclature_flag__ration
+msgid "Ration"
+msgstr "نسبة الطيران"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_affixment_flag__activity_user_id
+#: model:ir.model.fields,field_description:flag_barcode.field_entity_flag__activity_user_id
+#: model:ir.model.fields,field_description:flag_barcode.field_faces_flag__activity_user_id
+#: model:ir.model.fields,field_description:flag_barcode.field_flag_category__activity_user_id
+#: model:ir.model.fields,field_description:flag_barcode.field_flyration_flag__activity_user_id
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__activity_user_id
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag_line__activity_user_id
+#: model:ir.model.fields,field_description:flag_barcode.field_image_flag__activity_user_id
+#: model:ir.model.fields,field_description:flag_barcode.field_material_color_flag__activity_user_id
+#: model:ir.model.fields,field_description:flag_barcode.field_material_flag__activity_user_id
+#: model:ir.model.fields,field_description:flag_barcode.field_nomenclature_flag__activity_user_id
+msgid "Responsible User"
+msgstr "المستخدم المسؤول"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_affixment_flag__message_has_sms_error
+#: model:ir.model.fields,field_description:flag_barcode.field_entity_flag__message_has_sms_error
+#: model:ir.model.fields,field_description:flag_barcode.field_faces_flag__message_has_sms_error
+#: model:ir.model.fields,field_description:flag_barcode.field_flag_category__message_has_sms_error
+#: model:ir.model.fields,field_description:flag_barcode.field_flyration_flag__message_has_sms_error
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__message_has_sms_error
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag_line__message_has_sms_error
+#: model:ir.model.fields,field_description:flag_barcode.field_image_flag__message_has_sms_error
+#: model:ir.model.fields,field_description:flag_barcode.field_material_color_flag__message_has_sms_error
+#: model:ir.model.fields,field_description:flag_barcode.field_material_flag__message_has_sms_error
+#: model:ir.model.fields,field_description:flag_barcode.field_nomenclature_flag__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: flag_barcode
+#: model_terms:ir.ui.view,arch_db:flag_barcode.so_demo_select_products_view_form
+msgid "Select Multiple Products"
+msgstr "اختيار عدة منتجات"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_so_select_products_demo__selected_prod_id
+msgid "Selected Prod"
+msgstr "المنتج المختار"
+
+#. module: flag_barcode
+#: model:ir.actions.act_window,name:flag_barcode.selected_product_flag_action
+#: model:ir.actions.act_window,name:flag_barcode.so_selected_product_flag_action
+#: model:ir.ui.menu,name:flag_barcode.selected_products_flag_menu
+msgid "Selected Products"
+msgstr "المنتجات المختارة"
+
+#. module: flag_barcode
+#: model_terms:ir.ui.view,arch_db:flag_barcode.select_products_view_form
+msgid "Selected Products Form"
+msgstr "فورم المنتجات المختارة"
+
+#. module: flag_barcode
+#: model_terms:ir.ui.view,arch_db:flag_barcode.select_products_view_tree
+msgid "SelectedProductsTree"
+msgstr "شجرة المنتجات المختارة"
+
+#. module: flag_barcode
+#: model:ir.model.fields.selection,name:flag_barcode.selection__generate_barcode_flag__product_type__service
+msgid "Service"
+msgstr "الخدمة"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_nomenclature_flag__height_stored
+msgid "Standard Height"
+msgstr "الإرتفاع القياسي"
+
+#. module: flag_barcode
+#: model:ir.model.fields,help:flag_barcode.field_affixment_flag__activity_state
+#: model:ir.model.fields,help:flag_barcode.field_entity_flag__activity_state
+#: model:ir.model.fields,help:flag_barcode.field_faces_flag__activity_state
+#: model:ir.model.fields,help:flag_barcode.field_flag_category__activity_state
+#: model:ir.model.fields,help:flag_barcode.field_flyration_flag__activity_state
+#: model:ir.model.fields,help:flag_barcode.field_generate_barcode_flag__activity_state
+#: model:ir.model.fields,help:flag_barcode.field_generate_barcode_flag_line__activity_state
+#: model:ir.model.fields,help:flag_barcode.field_image_flag__activity_state
+#: model:ir.model.fields,help:flag_barcode.field_material_color_flag__activity_state
+#: model:ir.model.fields,help:flag_barcode.field_material_flag__activity_state
+#: model:ir.model.fields,help:flag_barcode.field_nomenclature_flag__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"الحالة على أساس الأنشطة\n"
+"المتأخرة: تاريخ الاستحقاق مر\n"
+"اليوم: تاريخ النشاط هو اليوم\n"
+"المخطط: الأنشطة المستقبلية."
+
+#. module: flag_barcode
+#: model:ir.model.fields.selection,name:flag_barcode.selection__generate_barcode_flag__product_type__product
+msgid "Storable Product"
+msgstr "منتج قابل للتخزين"
+
+#. module: flag_barcode
+#: code:addons/flag_barcode/models/nomenclature_flag.py:0
+#, python-format
+msgid "Success"
+msgstr "نجاح"
+
+#. module: flag_barcode
+#: code:addons/flag_barcode/models/nomenclature_flag.py:0
+#, python-format
+msgid "Successfully changed standard height"
+msgstr "تم تغيير الإرتفاع القياسي بنجاح"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__test_prod
+msgid "Test Prod"
+msgstr "تجربة المنتج"
+
+#. module: flag_barcode
+#: model:ir.model.fields,help:flag_barcode.field_affixment_flag__activity_exception_decoration
+#: model:ir.model.fields,help:flag_barcode.field_entity_flag__activity_exception_decoration
+#: model:ir.model.fields,help:flag_barcode.field_faces_flag__activity_exception_decoration
+#: model:ir.model.fields,help:flag_barcode.field_flag_category__activity_exception_decoration
+#: model:ir.model.fields,help:flag_barcode.field_flyration_flag__activity_exception_decoration
+#: model:ir.model.fields,help:flag_barcode.field_generate_barcode_flag__activity_exception_decoration
+#: model:ir.model.fields,help:flag_barcode.field_generate_barcode_flag_line__activity_exception_decoration
+#: model:ir.model.fields,help:flag_barcode.field_image_flag__activity_exception_decoration
+#: model:ir.model.fields,help:flag_barcode.field_material_color_flag__activity_exception_decoration
+#: model:ir.model.fields,help:flag_barcode.field_material_flag__activity_exception_decoration
+#: model:ir.model.fields,help:flag_barcode.field_nomenclature_flag__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "نوع النشاط الاستثنائي المسجل."
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_affixment_flag__message_unread
+#: model:ir.model.fields,field_description:flag_barcode.field_entity_flag__message_unread
+#: model:ir.model.fields,field_description:flag_barcode.field_faces_flag__message_unread
+#: model:ir.model.fields,field_description:flag_barcode.field_flag_category__message_unread
+#: model:ir.model.fields,field_description:flag_barcode.field_flyration_flag__message_unread
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__message_unread
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag_line__message_unread
+#: model:ir.model.fields,field_description:flag_barcode.field_image_flag__message_unread
+#: model:ir.model.fields,field_description:flag_barcode.field_material_color_flag__message_unread
+#: model:ir.model.fields,field_description:flag_barcode.field_material_flag__message_unread
+#: model:ir.model.fields,field_description:flag_barcode.field_nomenclature_flag__message_unread
+msgid "Unread Messages"
+msgstr "الرسائل الجديدة"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_affixment_flag__message_unread_counter
+#: model:ir.model.fields,field_description:flag_barcode.field_entity_flag__message_unread_counter
+#: model:ir.model.fields,field_description:flag_barcode.field_faces_flag__message_unread_counter
+#: model:ir.model.fields,field_description:flag_barcode.field_flag_category__message_unread_counter
+#: model:ir.model.fields,field_description:flag_barcode.field_flyration_flag__message_unread_counter
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__message_unread_counter
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag_line__message_unread_counter
+#: model:ir.model.fields,field_description:flag_barcode.field_image_flag__message_unread_counter
+#: model:ir.model.fields,field_description:flag_barcode.field_material_color_flag__message_unread_counter
+#: model:ir.model.fields,field_description:flag_barcode.field_material_flag__message_unread_counter
+#: model:ir.model.fields,field_description:flag_barcode.field_nomenclature_flag__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "عدد الرسائل الجديدة"
+
+#. module: flag_barcode
+#: model_terms:ir.ui.view,arch_db:flag_barcode.generate_barcode_flag_form
+msgid "Update Product"
+msgstr "تحديث المنتج"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_so_select_products_demo__user_id
+msgid "User"
+msgstr "المستخدم"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_affixment_flag__website_message_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_entity_flag__website_message_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_faces_flag__website_message_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_flag_category__website_message_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_flyration_flag__website_message_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__website_message_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag_line__website_message_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_image_flag__website_message_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_material_color_flag__website_message_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_material_flag__website_message_ids
+#: model:ir.model.fields,field_description:flag_barcode.field_nomenclature_flag__website_message_ids
+msgid "Website Messages"
+msgstr "رسايل الموقع"
+
+#. module: flag_barcode
+#: model:ir.model.fields,help:flag_barcode.field_affixment_flag__website_message_ids
+#: model:ir.model.fields,help:flag_barcode.field_entity_flag__website_message_ids
+#: model:ir.model.fields,help:flag_barcode.field_faces_flag__website_message_ids
+#: model:ir.model.fields,help:flag_barcode.field_flag_category__website_message_ids
+#: model:ir.model.fields,help:flag_barcode.field_flyration_flag__website_message_ids
+#: model:ir.model.fields,help:flag_barcode.field_generate_barcode_flag__website_message_ids
+#: model:ir.model.fields,help:flag_barcode.field_generate_barcode_flag_line__website_message_ids
+#: model:ir.model.fields,help:flag_barcode.field_image_flag__website_message_ids
+#: model:ir.model.fields,help:flag_barcode.field_material_color_flag__website_message_ids
+#: model:ir.model.fields,help:flag_barcode.field_material_flag__website_message_ids
+#: model:ir.model.fields,help:flag_barcode.field_nomenclature_flag__website_message_ids
+msgid "Website communication history"
+msgstr "سجل اتصال الموقع"
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__width_nomenclature
+#: model:ir.model.fields,field_description:flag_barcode.field_nomenclature_flag__width
+#: model:ir.model.fields,field_description:flag_barcode.field_product_product__width_nomenclature
+#: model_terms:ir.ui.view,arch_db:flag_barcode.generate_barcode_flag_form
+#: model_terms:ir.ui.view,arch_db:flag_barcode.nomenclature_flag_form
+msgid "Width"
+msgstr "العرض"
+
+#. module: flag_barcode
+#: model:ir.model,name:flag_barcode.model_affixment_flag
+msgid "affixment.flag"
+msgstr ""
+
+#. module: flag_barcode
+#: model_terms:ir.ui.view,arch_db:flag_barcode.generate_barcode_flag_form
+msgid "barcode"
+msgstr "باركود"
+
+#. module: flag_barcode
+#: model:ir.model,name:flag_barcode.model_entity_flag
+msgid "entity.flag"
+msgstr ""
+
+#. module: flag_barcode
+#: model:ir.model,name:flag_barcode.model_faces_flag
+msgid "faces.flag"
+msgstr ""
+
+#. module: flag_barcode
+#: model:ir.model,name:flag_barcode.model_flag_category
+msgid "flag.category"
+msgstr ""
+
+#. module: flag_barcode
+#: model:ir.model,name:flag_barcode.model_flyration_flag
+msgid "flyration.flag"
+msgstr ""
+
+#. module: flag_barcode
+#: model:ir.model,name:flag_barcode.model_generate_barcode_flag
+msgid "generate.barcode.flag"
+msgstr ""
+
+#. module: flag_barcode
+#: model:ir.model,name:flag_barcode.model_generate_barcode_flag_line
+msgid "generate.barcode.flag.line"
+msgstr ""
+
+#. module: flag_barcode
+#: model:ir.model.fields,field_description:flag_barcode.field_generate_barcode_flag__product_id
+msgid "generated Product"
+msgstr ""
+
+#. module: flag_barcode
+#: model:ir.model,name:flag_barcode.model_image_flag
+msgid "image.flag"
+msgstr ""
+
+#. module: flag_barcode
+#: model:ir.model,name:flag_barcode.model_material_color_flag
+msgid "material.color.flag"
+msgstr ""
+
+#. module: flag_barcode
+#: model:ir.model,name:flag_barcode.model_material_flag
+msgid "material.flag"
+msgstr ""
+
+#. module: flag_barcode
+#: model:ir.model,name:flag_barcode.model_nomenclature_flag
+msgid "nomenclature.flag"
+msgstr ""
+
+#. module: flag_barcode
+#: model:ir.model,name:flag_barcode.model_select_products_demo
+msgid "select.products.demo"
+msgstr ""
+
+#. module: flag_barcode
+#: model:ir.model,name:flag_barcode.model_so_select_products_demo
+msgid "so.select.products.demo"
+msgstr ""

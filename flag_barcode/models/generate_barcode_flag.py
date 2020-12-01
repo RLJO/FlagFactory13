@@ -18,7 +18,7 @@ class GenerateBarcodeFlag(models.Model):
     barcode = fields.Char('Flag Barcode', readonly=True)
 
     category_id = fields.Many2one('flag.category', 'Category')
-    flyration_id = fields.Many2one('flyration.flag', "Ratio", readonly=True)
+    flyration_id = fields.Many2one('flyration.flag', "Ratio")
     nomenclature_id = fields.Many2one('nomenclature.flag', 'Nomenclature')
     height_nomenclature = fields.Float("Height", store=True, compute="_get_height")
     width_nomenclature = fields.Float("Width", store=True, compute="_get_height")
@@ -409,12 +409,12 @@ class SoSelectProductsDemo(models.Model):
     def create_product(self):
 
         prods = self.env['select.products.demo'].search([('current_user', '=', self.user_id.id)])
+
         selecred_colored_prods = self.env['generate.barcode.flag'].search([('color_selected', '=', True)])
         if selecred_colored_prods:
             for i in selecred_colored_prods:
                 i.color_selected = False
 
-            print(self.env['generate.barcode.flag'].search([('color_selected', '=', False)]))
 
         sale_id = self.env['sale.order']
         create_so_id = sale_id.create({
@@ -424,6 +424,7 @@ class SoSelectProductsDemo(models.Model):
                     'product_id': prod.id,
                 }) for prod in prods.created_product]
         })
+        #clear all the table
         for x in prods:
             x.unlink()
 
