@@ -51,7 +51,11 @@ class BankVendorGuarantees(models.Model):
 
     acc_refund = fields.Many2many('account.move.line', 'account_acc_refund', 'account_id', 'acc_refund_id',
                                   string='Refunded Account')
-    acc_move_id = fields.Many2one('account.move', string="Journal Entries", readonly=True)
+
+    acc_move_paid = fields.Many2one('account.move', string="Journal Entries (Paid)", readonly=True)
+    acc_move_renew = fields.Many2one('account.move', string="Journal Entries (Renew)", readonly=True)
+    acc_move_refund = fields.Many2one('account.move', string="Journal Entries (Refund)", readonly=True)
+
     acc_paid = fields.Many2many('account.move.line')
     acc_renew = fields.Many2many('account.move.line', 'account_acc_renew', 'account_id', 'acc_renew_id',
                                  string='Renewed Account')
@@ -252,7 +256,7 @@ class BankVendorGuarantees(models.Model):
                       }),
                     ]
             })
-        self.acc_move_id = acc_move_ids
+        self.acc_move_paid = acc_move_ids
         self.acc_paid = acc_move_ids.line_ids
         return self.write({'state': 'paid'})
 
@@ -287,7 +291,7 @@ class BankVendorGuarantees(models.Model):
                 }),
             ]
         })
-        self.acc_move_id = acc_move_ids
+        self.acc_move_refund = acc_move_ids
         self.acc_refund = acc_move_ids.line_ids
         return self.write({'state': 'refund'})
 
@@ -387,7 +391,7 @@ class BankVendorGuaranteesWizard(models.Model):
                 }),
             ]
         })
-        record_id.acc_move_id = acc_move_ids
+        record_id.acc_move_refund = acc_move_ids
         record_id.acc_refund = acc_move_ids.line_ids
         record_id.write({'state': 'refund'})
 
@@ -444,7 +448,7 @@ class BankVendorGuaranteesWizard(models.Model):
                 }),
             ]
         })
-        record_id.acc_move_id = acc_move_ids
+        record_id.acc_move_renew = acc_move_ids
         record_id.acc_renew = acc_move_ids.line_ids
         record_id.write({'state': 'end'})
 

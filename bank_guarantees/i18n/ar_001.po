@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-01 14:31+0000\n"
-"PO-Revision-Date: 2020-12-01 14:31+0000\n"
+"POT-Creation-Date: 2020-12-01 16:02+0000\n"
+"PO-Revision-Date: 2020-12-01 16:02+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -356,7 +356,7 @@ msgstr "تقرير خطاب الضمان"
 #: model:ir.model.fields,field_description:bank_guarantees.field_bank_customer_guarantees__guarantee_expense
 #: model:ir.model.fields,field_description:bank_guarantees.field_bank_vendor_guarantees__guarantee_expense
 msgid "Guarantee Expense"
-msgstr "مصاريف الضمان"
+msgstr ""
 
 #. module: bank_guarantees
 #: model:ir.model.fields,field_description:bank_guarantees.field_bank_customer_guarantees__guarantee_expense_account
@@ -495,10 +495,26 @@ msgstr "تاريخ الاصدار"
 
 #. module: bank_guarantees
 #: model:ir.model,name:bank_guarantees.model_account_move
-#: model:ir.model.fields,field_description:bank_guarantees.field_bank_customer_guarantees__acc_move_id
-#: model:ir.model.fields,field_description:bank_guarantees.field_bank_vendor_guarantees__acc_move_id
 msgid "Journal Entries"
 msgstr "القيود اليومية"
+
+#. module: bank_guarantees
+#: model:ir.model.fields,field_description:bank_guarantees.field_bank_customer_guarantees__acc_move_paid
+#: model:ir.model.fields,field_description:bank_guarantees.field_bank_vendor_guarantees__acc_move_paid
+msgid "Journal Entries (Paid)"
+msgstr "القيود اليومية (مدفوع)"
+
+#. module: bank_guarantees
+#: model:ir.model.fields,field_description:bank_guarantees.field_bank_customer_guarantees__acc_move_refund
+#: model:ir.model.fields,field_description:bank_guarantees.field_bank_vendor_guarantees__acc_move_refund
+msgid "Journal Entries (Refund)"
+msgstr "القيود اليومية (مرتجع)"
+
+#. module: bank_guarantees
+#: model:ir.model.fields,field_description:bank_guarantees.field_bank_customer_guarantees__acc_move_renew
+#: model:ir.model.fields,field_description:bank_guarantees.field_bank_vendor_guarantees__acc_move_renew
+msgid "Journal Entries (Renew)"
+msgstr "القيود اليومية (تجديد)"
 
 #. module: bank_guarantees
 #: model:ir.model.fields,field_description:bank_guarantees.field_bank_customer_guarantees____last_update
@@ -745,7 +761,7 @@ msgstr "خطأ في تسليم الرسائل القصيرة"
 #: model_terms:ir.ui.view,arch_db:bank_guarantees.bank_customer_guarantees_view_form
 #: model_terms:ir.ui.view,arch_db:bank_guarantees.bank_vendor_guarantees_view_form
 msgid "Set To Draft"
-msgstr "تعيين إلى مسودة"
+msgstr "تعيين إلى مشروع"
 
 #. module: bank_guarantees
 #: model:ir.model.fields,field_description:bank_guarantees.field_guarantee_customer_report_wizard__start_date

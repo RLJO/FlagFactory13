@@ -128,7 +128,9 @@
                         <field name="renew_date"/>
                         <field name="bank_name"/>
                         <br/>
-                        <field name="acc_move_id"/>
+                        <field name="acc_move_paid"/>
+                        <field name="acc_move_renew"/>
+                        <field name="acc_move_refund"/>
                       </group>
                       <group>
                         <field name="guarantee_type"/>
