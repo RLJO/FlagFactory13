@@ -1,0 +1,11 @@
+<odoo>
+    <data>
+
+        <menuitem name="Website"
+          id="website.menu_website_configuration"
+          sequence="9"
+          groups="security_flags.group_flags_website_menuitem"
+          web_icon="website,static/description/icon.png"/>
+
+    </data>
+</odoo>
