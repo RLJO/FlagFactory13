@@ -2,3 +2,5 @@
 
 from . import models
 from . import hr_employee
+from . import hr_protection
+from . import calverter
