@@ -22,6 +22,27 @@
             <xpath expr="//field[@name='certificate']" position="after">
                 <field name="emp_job_data"/>
             </xpath>
+            <xpath expr="//field[@name='birthday']" position="after">
+                <field name="birthday_hijri"/>
+            </xpath>
+        </field>
+    </record>
+
+<!--    Contract-->
+    <record id="hr_contract_form_view_inherit2" model="ir.ui.view">
+        <field name="name">hr.contract.view.form.inherit2</field>
+        <field name="model">hr.contract</field>
+        <field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='date_start']" position="after">
+                <field name="date_start_hijri"/>
+            </xpath>
+            <xpath expr="//field[@name='trial_date_end']" position="before">
+                <field name="date_end_hijri"/>
+            </xpath>
+            <xpath expr="//field[@name='trial_date_end']" position="after">
+                <field name="trial_date_end_hijri"/>
+            </xpath>
         </field>
     </record>
 
