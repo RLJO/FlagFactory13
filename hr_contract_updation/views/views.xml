@@ -86,6 +86,13 @@
                         <field name="medical_allowance" nolabel="1"/>
                         <span>/ month</span>
                     </div>
+                  
+                    <label for="insurances"/>
+                    <div class="o_row">
+                        <field name="insurances" nolabel="1"/>
+                        <span>/ month</span>
+                    </div>
+                  
                     <label for="other_allowance"/>
                     <div class="o_row">
 
